@@ -1,6 +1,7 @@
 # UT07. Javascript
 
-![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/fcabdcec-6c30-46ba-978b-e3c60f38820d)
+
+<img src="https://github.com/profeMelola/LM-09-2023-24/assets/91023374/fcabdcec-6c30-46ba-978b-e3c60f38820d" width="25%"/>
 
 
 ## Página principal del curso
