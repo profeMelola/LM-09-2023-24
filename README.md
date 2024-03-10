@@ -1,5 +1,6 @@
 # UT07. Javascript
-![Uploading image.png…]()
+
+![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/fcabdcec-6c30-46ba-978b-e3c60f38820d)
 
 
 ## Página principal del curso
