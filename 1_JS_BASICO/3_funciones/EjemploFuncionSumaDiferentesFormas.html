@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando con funciones</title>
+</head>
+<body>
+    <script>
+        // 1. Declarando la funcion
+        console.log("F1: "+suma(2,4));
+        function suma(a,b){
+            return a+b;
+        }
+
+        // 2. Expresión de función
+        //console.log("F2 antes: "+suma2(2,2)); //Da error
+        const suma2 = function(a,b){
+            return a+b;
+        }
+        console.log("F2: "+suma2(2,2));
+
+        // 3. Lambda
+        const suma3 = (a,b) => {
+            const c = 5;
+            return c+a+b;
+        }
+        console.log("F3: "+suma3(5,5));
+
+    </script>
+    
+</body>
+</html>

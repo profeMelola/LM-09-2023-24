@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicar con Array functions</title>
+</head>
+<body>
+    <script>
+        /*
+         * Programa una función que devuelva la suma total de caracteres de las palabras 
+         * del array que contengan la letra 'R'.
+         * No debe ser case-sensitive, por tanto rojo y verde si contienen la letra R
+         * Puedes hacerlo con programación funcional y funciones flecha o de forma tradicional
+         * Pista: utiliza la función includes de String
+         */
+
+        const arrayRGB = ["rojo","verde","azul"];
+
+
+        // SOLUCIÓN FUNCIONAL
+        function moderna(letra){
+            /*
+            // Array con aquellos colores que contienen la letra r
+            const arrayConR = arrayRGB.filter( color => color.toUpperCase().includes(letra.toUpperCase()) );
+            console.log(arrayConR);
+
+            
+            // reduce::::::: Recorrer todos los elementos del array, e ir acumulando sus valores 
+            // (o alguna operación diferente) y sumarlo todo, para devolver su resultado final.
+
+            const resultado = arrayConR.reduce( (total,color) => total + color.length,0 );
+
+            return resultado;
+            */
+            return arrayRGB
+            .filter( color => color.toUpperCase().includes(letra.toUpperCase()) )
+            .reduce( (total,color) => total + color.length,0 );
+
+            
+        }
+
+        // SOLUCIÓN TRADICIONAL
+        function tradicional(letra){
+            let sumatorio = 0;
+            
+            for(const color of arrayRGB){
+                if (color.toUpperCase().includes(letra.toUpperCase())) {
+                    sumatorio += color.length;
+                }
+                    
+            }
+            
+            return sumatorio;
+        }
+
+        console.log("Resultado llamando a la función con estilo moderno de programación: "+moderna('R'));
+        console.log("Resultado llamando a la función con estilo tradicional de programación: "+tradicional('R'));
+        
+    </script>
+</body>
+</html>
