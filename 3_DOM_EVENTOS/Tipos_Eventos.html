@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <p>
+        <a href="https://www.google.es"  onclick="alert('Has pulsado en el enlace de GOOGLE')">GOOGLE INLINE 1</a>    
+    </p>
+    <p>
+        <!-- Si pongo return false no se conecta a google-->
+        <a href="https://www.google.es"  onclick="alert('Has pulsado en el enlace de GOOGLE');return false">GOOGLE INLINE 2</a>
+    </p>
+    <p>
+        <a href="https://www.google.es"  onclick="avisar()">GOOGLE INLINE 3</a>    
+    </p>
+
+    <p>
+        <a id="tipo2" href="https://www.google.es">GOOGLE EVENTO TIPO 2</a>    
+    </p>
+
+    <p>
+        <a id="tipo3" href="https://www.google.es">GOOGLE EVENTO TIPO 3</a>    
+    </p>
+
+    <script>
+        function avisar(){
+            console.log("estás en la función avisar...");
+            alert('Has pulsado en el enlace de GOOGLE');
+            //return false; //no para la conexión
+        }
+
+        /* ************** EVENTOS: FORMA 2 ************** */
+        const enlace = document.getElementById("tipo2");
+
+        //enlace.onclick = avisar;
+        enlace.onclick = function (){
+            alert("He capturado el evento tipo 2 ");
+        };
+
+        //machaca la función anterior
+        enlace.onclick = function (evento){
+            alert("He capturado el evento tipo 2 pasando el evento y no dejo conectarse");
+            evento.preventDefault();
+        };
+
+        enlace.onclick = (evento) => {
+            alert("[=>] He capturado el evento tipo 2 pasando el evento y no dejo conectarse");
+            evento.preventDefault();
+        };
+
+        /* ************** EVENTOS: FORMA 3 ************** */
+        const enlaceTipo3 = document.getElementById("tipo3");
+
+        //enlaceTipo3.addEventListener('click',avisar);
+
+        enlaceTipo3.addEventListener('click',function (event){
+            alert("Has pulsado en el enlace de GOOGLE");
+        });
+
+        enlaceTipo3.addEventListener('click', function(event){
+            alert('Ya te he dicho que has pulsado en el enlade de GOOGLE, torpedo!!!!');
+        });
+
+        enlaceTipo3.addEventListener('click',(event) => {
+            if (!confirm('¿Deseas realmente conectarse a Google?'))
+                event.preventDefault();
+        });
+
+
+
+
+
+    </script>
+</body>
+</html>

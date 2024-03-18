@@ -5,7 +5,6 @@
 ![image](https://user-images.githubusercontent.com/91023374/233853599-b6630883-184b-467e-926b-31c0c4a88c1f.png)
 
 
-https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/course/view.php?id=527&section=13
 
 # Entorno del navegador
 
