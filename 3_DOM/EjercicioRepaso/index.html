@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio REPASO 3EV</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="item">
+            <h1>Ejercicio de repaso de 3ev</h1>
+            <h2>JS DOM y Eventos</h2>
+        </header>
+        <main class="item">
+            <div class="data">
+                <h1 style="text-align: center;">Informe de notas finales</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Nombre completo del alumno</th>
+                            <th class="programacion">Programación</th>
+                            <th class="lm">Lenguaje de Marcas</th>
+                            <th class="bd">Base de Datos</th>
+                            <th class="si">Sistemas Informáticos</th>
+                            <th class="entornos">Entornos de Desarrollo</th>
+                            <th class="fol">FOL</th>
+                            <th>Ver gráfica</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se cargarán mediante JS las filas de la tabla con su contenido-->
+                        <!-- Una fila por cada alumno y las columnas correspondientes -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <aside class="item">
+            <p style="text-align: center;">Notas del alumno<span>?????????</span></p>
+            <p>Nota media:<span>?????????</span></p>
+            <div>
+                <!-- los div van en el mismo orden que las columnas de la tabla correspondiente a las asignaturas -->
+                <div class="programacion nota"></div>
+                <div class="lm nota"></div>
+                <div class="bd nota"></div>
+                <div class="si nota"></div>
+                <div class="entornos nota"></div>
+                <div class="fol nota"></div>
+            </div>
+        </aside>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
