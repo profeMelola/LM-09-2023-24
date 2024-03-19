@@ -5,9 +5,8 @@ https://es.javascript.info/function-basics
 
 https://es.javascript.info/function-expressions
 
-https://lenguajejs.com/javascript/introduccion/funciones-basicas/
+https://lenguajejs.com/javascript/introduccion/funciones/
 
-https://lenguajejs.com/javascript/fundamentos/funciones/#arrow-functions
 
 ## Resumen: declaración de función vs expresión de función
 
