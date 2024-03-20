@@ -6,7 +6,20 @@
  * Mensaje si está conectado: Haz click aquí para ver el contenido.
  */
 const USER_LOGGED = true;
+console.log(typeof(USER_LOGGED));
+
+//USER_LOGGED = false;
+
+// let variable = "hola";
+// console.log(variable);
+// variable = "adios";
+// console.log(variable);
+
+
 const BLOCK_TEXT = document.querySelector('.block-text');
+
+console.log(BLOCK_TEXT);
+console.log(typeof(BLOCK_TEXT));
 
 if (USER_LOGGED) {
     BLOCK_TEXT.innerHTML = '<a href="https://www.google.es" target="_blank">Haz click aquí para ver el contenido</a>';
