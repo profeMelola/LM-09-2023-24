@@ -1,15 +1,8 @@
 # Diseño de la tienda online
 
-## Ejemplos
+## Ejemplo
 
 ![image](https://user-images.githubusercontent.com/91023374/233855525-0ecc3c6c-ff97-4565-b3f2-3eeec9de1af1.png)
-
-
-![image](https://user-images.githubusercontent.com/91023374/228541127-9a7df1e8-45d5-4c69-add8-5ef88d693a1c.png)
-
-
-![image](https://user-images.githubusercontent.com/91023374/228541247-79665a01-b392-4de7-ba99-12f76ea9ebc7.png)
-
 
 ## Cantidad de productos: mínimo 9 productos
 
@@ -28,6 +21,11 @@ En el caso de la frutería se está filtrando por fruta de temporada, verduras..
 
 Decide en tu tienda las opciones de filtrado acordes a la temática de la misma.
 
+## Carrito de la compra
 
+En el caso de que no se haya comprado ningún producto, decide como mostrarlo:
+- El carrito no aparece.
+- El carrito aparece indicando que no hay productos en la bolsa.
+- ...
 
 
