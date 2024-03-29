@@ -17,6 +17,7 @@ Si vas a reutilizar el formulario de la primera evaluación, ten en cuenta que d
 - Usuario.
 - Contraseña.
 - Repetir contraseña.
+- Dirección completa.
 
 Ejemplo de formulario:
 
@@ -27,21 +28,13 @@ Ejemplo de formulario:
 
 El diseño del formulario es cosa tuya. 
 
-Haz que apareza y desaparezca una vez que el usuario se ha registrado o iniciado sesión. Siempre debe quedar la página principal de la tienda visible.
+Haz que apareza y desaparezca una vez que el usuario se ha registrado o iniciado sesión. 
 
-Ejemplo:
+Ten en cuenta que siempre debe quedar la página principal de la tienda visible.
 
-PENDIENTE!!!!!!
+## Javascript en el formulario
 
-
-## Validaciones HTML5 y JS
-
-**Debes añadir las siguientes restricciones HTML5:**
-
-- Todos los campos son obligatorios.
-- Los campos contraseña debe estar compuesto únicamente por letras minúsculas y números y tener una longitud mínima de 8 y una longitud máxima de 12.
-- Con JS hay que validar que lo escrito en las dos contraseñas sea idéntico. 
-- El campo dirección completa debe tener una longitud mínima de 10.
+- Validar que lo escrito en las dos contraseñas sea idéntico. 
 - En el caso de que al hacer el submit el campo "dirección completa" tenga una longitud inferior a 10, debe salir un mensaje personalizado diciendo:
 
 "Dirección demasiado corta. No has escrito la dirección de envío completa"
