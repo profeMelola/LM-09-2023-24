@@ -2,16 +2,13 @@
 
 ## Esta web es la que vamos a desarrollar juntos en clase el resto del trimestre
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 Realmente **en clase vamos a trabajar solo con la parte de mostrar los productos para comparlos y el carrito de la compra.** 
 
 El diseño completo de tu tienda online es cosa tuya (cabecera, logo, menús ....). Decide si reutilizas por completo tu práctica de la segunda evaluación, si la simplificas, si la mejoras etc...
 
 Te muestro una idea como resultado final:
-
-![image](https://user-images.githubusercontent.com/91023374/233855614-b4d400d0-657d-44e1-b347-19fa8fc09f70.png)
-
 
 
 ___
