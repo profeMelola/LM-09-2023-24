@@ -52,7 +52,7 @@ La evaluación se basará en esta rúbrica:
       <td>10</td>
     </tr>
     <tr>
-      <td><p>El sumatorio de los precios es correcto.</p><p>Añade y borra productos y verifi ca la suma. Si no funciona el añadir o borrar productos se da por mala esta opción.</p></td>
+      <td><p>El sumatorio de los precios es correcto.</p><p>Añade y borra productos y verifica la suma. Si no funciona el añadir o borrar productos se da por mala esta opción.</p></td>
       <td>10</td>
     </tr>
     <tr>
