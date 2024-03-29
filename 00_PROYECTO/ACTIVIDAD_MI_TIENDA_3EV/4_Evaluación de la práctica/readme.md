@@ -41,7 +41,7 @@ La evaluación se basará en esta rúbrica:
     </tr>
     <tr>
       <td>CARRITO: se indica de alguna forma que el carrito está vacío o simplemente no aparece hasta que se añadan productos.</td>
-      <td>2</td>
+      <td>3</td>
     </tr>
     <tr>
       <td>CARRITO: se añaden productos en el carrito correctamente indicando la cantidad correcta de los mismos</td>
@@ -61,11 +61,11 @@ La evaluación se basará en esta rúbrica:
     </tr>
     <tr>
       <td>CARRITO: se vacía el carrito correctamente con la opción de vaciar.</td>
-      <td>2</td>
+      <td>3</td>
     </tr>
     <tr>
       <td>CARRITO: se guarda el carrito en el LocalStorage, por tanto al recarga la página no se pierde</td>
-      <td>2</td>
+      <td>3</td>
     </tr>
     <tr>
       <td>MENÚ NAVEGACIÓN: los productos se filtran por al menos 2 categorías y existe la opción de ver de nuevo todos los productos.</td>
