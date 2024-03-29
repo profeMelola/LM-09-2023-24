@@ -42,11 +42,7 @@ Se podrán borrar todos los productos de un mismo tipo a la vez:
 
 ![image](https://user-images.githubusercontent.com/91023374/233856275-bdd1bc83-a185-4e11-b7e3-010268500a9b.png)
 
-#### 3. Borrar una unidad de un producto concreto
-
-
-
-#### 4. Vaciar el carrito
+#### 3. Vaciar el carrito
 
 Se podrán borrar todos los productos del carrito:
 
