@@ -26,7 +26,7 @@ Ejemplo de formulario:
 
 ## Diseño del formulario
 
-El diseño del formulario es cosa tuya. 
+El diseño y apariencia del formulario es libre. 
 
 Haz que apareza y desaparezca una vez que el usuario se ha registrado o iniciado sesión. 
 
