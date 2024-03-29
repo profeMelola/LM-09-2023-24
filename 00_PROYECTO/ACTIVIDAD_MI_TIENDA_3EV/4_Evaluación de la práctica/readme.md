@@ -1,4 +1,4 @@
-# Forma de evaluación. 
+# Formato de evaluación
 
 Habrá un TALLER en el Aula Virtual para hacer la entrega y en dicho taller se te asignaran los dos trabajos de tus compañeros que tendrás que evaluar.
 
