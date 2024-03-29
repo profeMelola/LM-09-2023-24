@@ -7,9 +7,7 @@ Cada alumno va a corregir dos trabajos de sus compañeros. Esta coevaluación ti
 Tu trabajo pesa un 80% en la calificación.
 
 
-# Aspectos a puntuar. Rúbrica
-
-La evaluación se basará en esta rúbrica:
+# Aspectos a puntuar. Guía de evaluación
 
 <table>
   <thead>
