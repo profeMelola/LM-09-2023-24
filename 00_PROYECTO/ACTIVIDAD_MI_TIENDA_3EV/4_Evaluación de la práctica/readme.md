@@ -41,31 +41,31 @@ La evaluación se basará en esta rúbrica:
     </tr>
     <tr>
       <td>CARRITO: se indica de alguna forma que el carrito está vacío o simplemente no aparece hasta que se añadan productos.</td>
-      <td>5</td>
+      <td>2</td>
     </tr>
     <tr>
       <td>CARRITO: se añaden productos en el carrito correctamente indicando la cantidad correcta de los mismos</td>
-      <td>5</td>
+      <td>4</td>
     </tr>
     <tr>
       <td>CARRITO: se eliminan de uno en uno los productos del carrito y se actualizan correctamente las unidades</td>
-      <td>5</td>
+      <td>4</td>
     </tr>
     <tr>
       <td>CARRITO: se borran todas la unidades de un mismo producto en el carrito</td>
-      <td>5</td>
+      <td>4</td>
     </tr>
     <tr>
       <td><p>CARRITO: el sumatorio de los precios es correcto.</p><p>Añade y borra productos y verifica la suma. Si no funciona el añadir o borrar productos se da por mala esta opción.</p></td>
-      <td>5</td>
+      <td>4</td>
     </tr>
     <tr>
       <td>CARRITO: se vacía el carrito correctamente con la opción de vaciar.</td>
-      <td>5</td>
+      <td>2</td>
     </tr>
     <tr>
       <td>CARRITO: se guarda el carrito en el LocalStorage, por tanto al recarga la página no se pierde</td>
-      <td>5</td>
+      <td>2</td>
     </tr>
     <tr>
       <td>MENÚ NAVEGACIÓN: los productos se filtran por al menos 2 categorías y existe la opción de ver de nuevo todos los productos.</td>
