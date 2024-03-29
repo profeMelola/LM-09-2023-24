@@ -34,4 +34,7 @@ En el caso de que no se haya comprado ningún producto, decide como mostrarlo:
 - El carrito aparece indicando que no hay productos en la bolsa.
 - ...
 
+### Formulario
 
+Especificaciones sobre el formulario de inicio/registro.
+https://github.com/profeMelola/LM-09-2023-24/tree/main/_PROYECTO/ACTIVIDAD_MI_TIENDA_3EV/formulario
