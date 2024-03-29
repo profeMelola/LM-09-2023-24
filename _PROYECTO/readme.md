@@ -8,9 +8,6 @@ Realmente **en clase vamos a trabajar solo con la parte de mostrar los productos
 
 El diseño completo de tu tienda online es cosa tuya (cabecera, logo, menús ....). Decide si reutilizas por completo tu práctica de la segunda evaluación, si la simplificas, si la mejoras etc...
 
-Te muestro una idea como resultado final:
-
-
 ___
 En clase vamos a poner en práctica los contenidos aprendidos creando nuestra FRUTERÍA ONLINE y deberás ir trabajando en paralelo en TU PROPIA TIENDA ONLINE.
 
