@@ -4,11 +4,17 @@
 
 ![image](https://user-images.githubusercontent.com/91023374/233855525-0ecc3c6c-ff97-4565-b3f2-3eeec9de1af1.png)
 
-## Cantidad de productos: mínimo 9 productos
+El diseño completo de tu tienda online es cosa tuya (cabecera, logo, menús ....). 
+
+Decide si reutilizas por completo tu práctica de la segunda evaluación, si la simplificas, si la mejoras etc...
+
+## Requisitos
+
+### Cantidad de productos: mínimo 9 productos
 
 La tienda debe tener como mínimo 9 productos.
 
-## Menú de filtrado: 3 opciones
+### Menú de filtrado: 3 opciones
 
 Debe haber un menú para filtrar los productos a mostrar. 
 
@@ -21,7 +27,7 @@ En el caso de la frutería se está filtrando por fruta de temporada, verduras..
 
 Decide en tu tienda las opciones de filtrado acordes a la temática de la misma.
 
-## Carrito de la compra
+### Carrito de la compra
 
 En el caso de que no se haya comprado ningún producto, decide como mostrarlo:
 - El carrito no aparece.
