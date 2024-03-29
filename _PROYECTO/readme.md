@@ -2,7 +2,8 @@
 
 ## Esta web es la que vamos a desarrollar juntos en clase el resto del trimestre
 
-![alt text](image-1.png)
+![Uploading image.png…]()
+
 
 Realmente **en clase vamos a trabajar solo con la parte de mostrar los productos para comparlos y el carrito de la compra.** 
 
