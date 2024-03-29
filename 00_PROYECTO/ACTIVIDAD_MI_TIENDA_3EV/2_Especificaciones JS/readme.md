@@ -76,3 +76,6 @@ En el caso de la frutería se está filtrando por fruta de temporada, verduras..
 
 Decide en tu tienda las opciones de filtrado acordes a la temática de la misma.
 
+## Guardar el carrito en el LocalStorage
+
+En todo momento, el estado del carrito debe guardarse en el LocalStorage, de forma que si se recarga la página o se cierra y vuelve a abrir, no se pierdan los artículos añadidos a la bolsa.
