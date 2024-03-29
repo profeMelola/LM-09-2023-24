@@ -2,7 +2,7 @@
 
 ## Esta web es la que vamos a desarrollar juntos en clase el resto del trimestre
 
-![Uploading image.png…]()
+![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/88e9578a-fe75-4994-94c1-678a7ac8e790)
 
 
 Realmente **en clase vamos a trabajar solo con la parte de mostrar los productos para comparlos y el carrito de la compra.** 
