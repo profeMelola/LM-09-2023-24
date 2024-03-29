@@ -46,7 +46,7 @@ Como en la siguiente captura:
 
 **LocalStorage:**
 
-Guarda en el LocalStorage un json con un objeto con toda la información de registro del usuario (todos los datos rellenos en el formulario).
+Guarda en el LocalStorage un json con un objeto con toda la información de registro del usuario (todos los datos obligatorios del formulario).
 
 De esta forma simulamos que el usuario está dado de alta en el sistema (en una base de datos).
 
