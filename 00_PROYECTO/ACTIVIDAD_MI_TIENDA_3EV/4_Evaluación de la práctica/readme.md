@@ -68,7 +68,7 @@ La evaluación se basará en esta rúbrica:
       <td>10</td>
     </tr>
     <tr>
-      <td>El formulario aparece (al seleccionar la opción) y desaparece (al hacer el submit) incluido en la propia página de la tienda o en una ventanaemergente dejando la tienda siempre visible (no otra página nueva)</td>
+      <td>El formulario aparece (al seleccionar la opción) y desaparece (al hacer el submit) incluido en la propia página de la tienda o en una ventana emergente dejando la tienda siempre visible (no otra página nueva)</td>
       <td>10</td>
     </tr>
     <tr>
