@@ -8,6 +8,8 @@ El diseño completo de tu tienda online es cosa tuya (cabecera, logo, footer, me
 
 Decide si reutilizas por completo tu práctica de la segunda evaluación, si la simplificas, si la mejoras etc...
 
+**NO ES REQUISITO QUE SEA RESPONSIVE. Debe verse bien en formato desktop**
+
 ## Requisitos
 
 ### Cantidad de productos: mínimo 9 productos
