@@ -13,7 +13,12 @@ Empieza a trabajar diseñando tu formulario. Luego aprenderás en JS como adapta
 
 ## Campos del formulario
 
-El formulario debe tener estos campos obligatoriamente:
+Si vas a reutilizar el formulario de la primera evaluación, ten en cuenta que debe tener obligatoriamente los campos:
+- Usuario.
+- Contraseña.
+- Repetir contraseña.
+
+Ejemplo de formulario:
 
 ![image](https://user-images.githubusercontent.com/91023374/228535718-1de33325-bd11-4182-a8f5-e47110aea2fe.png)
 
