@@ -4,11 +4,12 @@
 
 **En clase vamos a trabajar solo con la parte de mostrar los productos para comparlos y el carrito de la compra.** 
 
+___
 
 El diseño completo de tu tienda online es cosa tuya (cabecera, logo, menús ....). Decide si reutilizas por completo tu práctica de la segunda evaluación, si la simplificas, si la mejoras etc...
+
 **Sigue la indicaciones publicadas en la subcarpeta ACTIVIDAD_MI_TIENDA_3EV**
 
-___
 En clase vamos a poner en práctica los contenidos aprendidos creando nuestra FRUTERÍA ONLINE y deberás ir trabajando en paralelo en TU PROPIA TIENDA ONLINE.
 
 **Para crear la tienda en clase aprenderemos:**
