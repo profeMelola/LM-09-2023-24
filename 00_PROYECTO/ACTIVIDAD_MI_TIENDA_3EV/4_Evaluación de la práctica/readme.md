@@ -20,7 +20,7 @@ La evaluación se basará en esta rúbrica:
   </thead>
   <tbody>
     <tr>
-      <td>Hay al menos 9 productos.</td>
+      <td>Hay al menos 9 productos. Que se cargan dinámicamente vía JS</td>
       <td>10</td>
     </tr>
     <tr>
@@ -33,7 +33,7 @@ La evaluación se basará en esta rúbrica:
           <li>info</li>
           <li>categorías (array)</li>
         </ul>
-      <td>10</td>
+      <td>5</td>
     </tr>
     <tr>
       <td>Se muestra la info adicional al producto al pasar por encima de la imagen del producto</td>
