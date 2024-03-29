@@ -11,7 +11,90 @@ Tu trabajo pesa un 80% en la calificación.
 
 La evaluación se basará en esta rúbrica:
 
-Pendiente especificar!!!!!
+<table>
+  <thead>
+    <tr>
+      <th>Criterio</th>
+      <th>Puntuación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hay al menos 9 productos.</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>El producto tiene todas las propiedades especificadas:
+        <ul>
+          <li>id</li>
+          <li>nombre</li>
+          <li>precio</li>
+          <li>imagen</li>
+          <li>info</li>
+          <li>categorías (array)</li>
+        </ul>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Se muestra la info adicional al producto al pasar por encima de la imagen del producto</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Se añaden productos en el carrito correctamente indicando la cantidad correcta de los mismos</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Se eliminan de uno en uno los productos del carrito y se actualizan correctamente las unidades</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Se borran todas la unidades de un mismo producto en el carrito</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td><p>El sumatorio de los precios es correcto.</p><p>Añade y borra productos y verifi ca la suma. Si no funciona el añadir o borrar productos se da por mala esta opción.</p></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Se vacía el carrito correctamente con la opción de vaciar.</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Se guarda el carrito en el LocalStorage, por tanto al recarga la página no se pierde</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Los productos se fi ltran por al menos 2 categorías y existe la opción de ver de nuevo todos los productos.</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>El formulario aparece (al seleccionar la opción) y desaparece (al hacer el submit) incluido en la propia página de la tienda o en una ventanaemergente dejando la tienda siempre visible (no otra página nueva)</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>FORMULARIO: con JS valida que lo escrito en las dos contraseñas sea idéntico. ¿Avisa cuando las contraseñas no coinciden?</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>FORMULARIO: Aparece el mensaje personalizado de validación: "Dirección demasiado corta. No has escrito la dirección de envío completa"</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Controlar diferencia entre inicio de sesión y registrar usuario. Se muestran más o menos campos del formulario en base si es de inicio de sesión o registro (por tanto se guarda el objeto usuario en elLocalStorage)</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Formulario de inicio de sesión:
+          <ol>
+            <li>Al hacer submit se comprueba que el login y pwd introducido coincidan con el login y pwd del objeto usuario guardado en el LocalStorage.</li>
+            <li>En caso conrrecto, el formulario desaparece como que se ha logado (es opcional sacar un mensaje dando la bienvenida).</li>
+            <li>En caso contrario que salga un alert avisando que el login o pwd no están registrados.</li>
+      </td>
+      <td>10</td>
+    </tr>
+    
+  </tbody>
+</table>
 
 # Fecha de entrega: no se admiten retrasos
 Lunes 13 de mayo a las 10:00
