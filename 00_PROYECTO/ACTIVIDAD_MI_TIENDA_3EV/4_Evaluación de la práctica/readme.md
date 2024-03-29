@@ -14,17 +14,17 @@ La evaluación se basará en esta rúbrica:
 <table>
   <thead>
     <tr>
-      <th>Criterio</th>
-      <th>Puntuación</th>
+      <th>CRITERIO</th>
+      <th>PUNTUACIÓN</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Hay al menos 9 productos. Que se cargan dinámicamente vía JS</td>
+      <td>PRODUCTOS: hay al menos 9 productos. Que se cargan dinámicamente vía JS</td>
       <td>10</td>
     </tr>
     <tr>
-      <td>El producto tiene todas las propiedades especificadas:
+      <td>(JS) El producto tiene todas las propiedades especificadas:
         <ul>
           <li>id</li>
           <li>nombre</li>
@@ -36,45 +36,57 @@ La evaluación se basará en esta rúbrica:
       <td>5</td>
     </tr>
     <tr>
-      <td>Se muestra la info adicional al producto al pasar por encima de la imagen del producto</td>
+      <td>PRODUCTOS: se muestra la info adicional al producto al pasar por encima de la imagen del producto</td>
       <td>10</td>
     </tr>
     <tr>
-      <td>Se añaden productos en el carrito correctamente indicando la cantidad correcta de los mismos</td>
+      <td>CARRITO: se indica de alguna forma que el carrito está vacío o simplemente no aparece hasta que se añadan productos.</td>
       <td>10</td>
     </tr>
     <tr>
-      <td>Se eliminan de uno en uno los productos del carrito y se actualizan correctamente las unidades</td>
+      <td>CARRITO: se añaden productos en el carrito correctamente indicando la cantidad correcta de los mismos</td>
       <td>10</td>
     </tr>
     <tr>
-      <td>Se borran todas la unidades de un mismo producto en el carrito</td>
+      <td>CARRITO: se eliminan de uno en uno los productos del carrito y se actualizan correctamente las unidades</td>
       <td>10</td>
     </tr>
     <tr>
-      <td><p>El sumatorio de los precios es correcto.</p><p>Añade y borra productos y verifica la suma. Si no funciona el añadir o borrar productos se da por mala esta opción.</p></td>
+      <td>CARRITO: se borran todas la unidades de un mismo producto en el carrito</td>
       <td>10</td>
     </tr>
     <tr>
-      <td>Se vacía el carrito correctamente con la opción de vaciar.</td>
+      <td><p>CARRITO: el sumatorio de los precios es correcto.</p><p>Añade y borra productos y verifica la suma. Si no funciona el añadir o borrar productos se da por mala esta opción.</p></td>
       <td>10</td>
     </tr>
     <tr>
-      <td>Se guarda el carrito en el LocalStorage, por tanto al recarga la página no se pierde</td>
+      <td>CARRITO: se vacía el carrito correctamente con la opción de vaciar.</td>
       <td>10</td>
     </tr>
     <tr>
-      <td>Los productos se filtran por al menos 2 categorías y existe la opción de ver de nuevo todos los productos.</td>
+      <td>CARRITO: se guarda el carrito en el LocalStorage, por tanto al recarga la página no se pierde</td>
       <td>10</td>
     </tr>
     <tr>
-      <td>El formulario aparece (al seleccionar la opción) y desaparece (al hacer el submit) incluido en la propia página de la tienda o en una ventana emergente dejando la tienda siempre visible (no otra página nueva)</td>
+      <td>MENÚ NAVEGACIÓN: los productos se filtran por al menos 2 categorías y existe la opción de ver de nuevo todos los productos.</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>FORMULARIO: l formulario aparece (al seleccionar la opción) y desaparece (al hacer el submit) incluido en la propia página de la tienda o en una ventana emergente dejando la tienda siempre visible (no otra página nueva)</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>FORMULARIO: tiene obligatoriamente los campos (usuario, pwd, repetir pwd, dirección completa)</td>
       <td>10</td>
     </tr>
     <tr>
       <td>FORMULARIO: con JS valida que lo escrito en las dos contraseñas sea idéntico. ¿Avisa cuando las contraseñas no coinciden?</td>
       <td>10</td>
     </tr>
+    <tr>
+      <td>FORMULARIO: con JS que se muestre la contraseña de alguna forma para comprobar lo que se ha escrito</td>
+      <td>5</td>
+    </tr>    
     <tr>
       <td>FORMULARIO: Aparece el mensaje personalizado de validación: "Dirección demasiado corta. No has escrito la dirección de envío completa"</td>
       <td>10</td>
@@ -87,7 +99,7 @@ La evaluación se basará en esta rúbrica:
       <td>Formulario de inicio de sesión:
           <ol>
             <li>Al hacer submit se comprueba que el login y pwd introducido coincidan con el login y pwd del objeto usuario guardado en el LocalStorage.</li>
-            <li>En caso conrrecto, el formulario desaparece como que se ha logado (es opcional sacar un mensaje dando la bienvenida).</li>
+            <li>En caso conrrecto, el formulario desaparece como que se ha logado y se muestre un mensaje dando la bienvenida.</li>
             <li>En caso contrario que salga un alert avisando que el login o pwd no están registrados.</li>
       </td>
       <td>10</td>
