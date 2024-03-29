@@ -34,7 +34,8 @@ Ten en cuenta que siempre debe quedar la página principal de la tienda visible.
 
 ## Javascript en el formulario
 
-- Validar que lo escrito en las dos contraseñas sea idéntico. 
+- Validar que lo escrito en las dos contraseñas sea idéntico.
+- Que exista una forma de mostrar la contraseña, que sea visible para ver lo que has escrito.
 - En el caso de que al hacer el submit el campo "dirección completa" tenga una longitud inferior a 10, debe salir un mensaje personalizado diciendo:
 
 "Dirección demasiado corta. No has escrito la dirección de envío completa"
