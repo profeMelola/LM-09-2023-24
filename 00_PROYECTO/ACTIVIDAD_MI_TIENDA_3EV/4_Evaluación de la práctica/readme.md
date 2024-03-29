@@ -64,7 +64,7 @@ La evaluación se basará en esta rúbrica:
       <td>10</td>
     </tr>
     <tr>
-      <td>Los productos se fi ltran por al menos 2 categorías y existe la opción de ver de nuevo todos los productos.</td>
+      <td>Los productos se filtran por al menos 2 categorías y existe la opción de ver de nuevo todos los productos.</td>
       <td>10</td>
     </tr>
     <tr>
