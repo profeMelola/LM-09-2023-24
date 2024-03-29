@@ -61,7 +61,7 @@ Si al cargar el formulario el usuario está guardado en el LocalStorage, debes m
 
 Al hacer submit comprobad que el login y pwd introducido coincidan con el usuario guardado en el localStorage. 
 
-En caso correcto, que desaparezca el formulario como que ya se ha logado.
+En caso correcto, que desaparezca el formulario como que ya se ha logado y se muestre un mensaje de bienvenida.
 
 En caso contrario que salga un mensaje avisando. Total libertad con el formato para mostrar el mensaje.
 
