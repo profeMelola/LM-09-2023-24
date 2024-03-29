@@ -25,23 +25,23 @@ Por ejemplo:
     
 ## Gestión de eventos: añadir y quitar productos del carrito (4 opciones)
 
-#### Añadir y quitar productos desde el panel de productos
+#### 1. Añadir y quitar productos desde el panel de productos
 
 Se podrán añadir y quitar productos del carrito de uno en uno:
 
 ![image](https://user-images.githubusercontent.com/91023374/233856397-58e93533-0778-4a54-b835-3b844980a642.png)
 
-#### Borrar todos los productos de un mismo tipo del carrito
+#### 2. Borrar todos los productos de un mismo tipo del carrito
 
 Se podrán borrar todos los productos de un mismo tipo a la vez:
 
 ![image](https://user-images.githubusercontent.com/91023374/233856275-bdd1bc83-a185-4e11-b7e3-010268500a9b.png)
 
-#### Borrar una unidad de un producto concreto
+#### 3. Borrar una unidad de un producto concreto
 
-Se podrá borrar unidades de producto del carrito, no todos a la vez. Para ello añade un botón de (-) o similar.
+Se podrá borrar unidades de producto del carrito, no todos a la vez. Para ello añade un botón de (-) o similar. Tú decides cómo!!!
 
-#### Vaciar el carrito
+#### 4. Vaciar el carrito
 
 Se podrán borrar todos los productos del carrito:
 
