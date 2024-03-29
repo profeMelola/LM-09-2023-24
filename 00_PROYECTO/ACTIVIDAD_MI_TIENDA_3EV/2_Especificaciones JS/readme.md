@@ -51,7 +51,10 @@ Se podrán borrar todos los productos del carrito:
 
 ## Gestión de eventos: información de cada producto
 
-Debes añadir el código JS necesario para que al pasar el ratón por encima de la imagen del producto se muestre la información del producto en cuestión.
+Aquí tienes dos opciones:
+
+- Mantener el hover css para mostrar la info de cada producto. Eso sí, esa info se ha cargado dinámicamente vía JS.
+- Con JS gestionar el evento y cuando se pasa el ratón por encima de la imagen del producto se muestre la información del producto en cuestión.
 
 Decide el efecto para mostrar dicha información.
 
