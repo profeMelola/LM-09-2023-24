@@ -29,3 +29,52 @@ Por lo tanto, **deberíamos usar una Expresión de Función solo cuando una Decl
 # Funciones Arrow
 
 ![image](https://user-images.githubusercontent.com/91023374/227973584-515db6d0-a42c-4fc5-a6ec-8423ddd5a91a.png)
+
+# Funciones Callbacks
+
+Pasar una función B por parámetro a una función A, de modo que la función A puede ejecutar esa función B de forma genérica desde su código.
+
+Ejemplo:
+
+```
+// fB = Función B (callback)
+const fB = function () {
+  console.log("Función B ejecutada.");
+};
+
+// fError = Función Error (callback)
+const fError = function () {
+  console.error("Error");
+};
+
+// fA = Función A
+const fA = function (callback, callbackError) {
+  const n = ~~(Math.random() * 5);
+  if (n > 2) callback();
+  else callbackError();
+};
+
+fA(fB, fError); // Si ejecutamos varias veces, algunas darán error y otras no
+```
+
+## Explicación del código:
+
+Este código en JavaScript define tres funciones y luego ejecuta una de ellas dependiendo de un valor aleatorio generado.
+
+### Definición de funciones:
+
+- **fB:** Es una función que simplemente imprime en la consola "Función B ejecutada." Utiliza console.log() para imprimir en la consola.
+- **fError:** Es una función que imprime "Error" en la consola utilizando console.error().
+- **fA:** Es una función que toma dos parámetros, callback y callbackError. Esta función genera un número aleatorio entre 0 y 4 (usando Math.random() y ~~(Math.random() * 5)). Si el número generado es mayor que 2, llama a la función callback, de lo contrario llama a callbackError.
+  
+### Llamada a la función fA:
+La última línea del código llama a la función fA pasando las funciones fB y fError como argumentos. 
+
+Esto significa que cuando se ejecute fA, dependiendo del valor aleatorio generado, llamará a una de estas funciones.
+
+### Ejecución:
+Cuando se ejecuta fA(fB, fError), fA generará un número aleatorio. Si ese número es mayor que 2, se ejecutará fB, imprimiendo "Función B ejecutada." en la consola. 
+
+Si el número es 2 o menor, se ejecutará fError, imprimiendo "Error" en la consola.
+
+Entonces, cada vez que ejecutes fA(fB, fError), obtendrás uno de estos dos mensajes en la consola, dependiendo del valor aleatorio generado.
