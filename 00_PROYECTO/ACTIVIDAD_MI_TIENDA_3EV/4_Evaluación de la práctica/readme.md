@@ -1,4 +1,4 @@
-# Forma de evaluación. 
+# Formato de evaluación
 
 Habrá un TALLER en el Aula Virtual para hacer la entrega y en dicho taller se te asignaran los dos trabajos de tus compañeros que tendrás que evaluar.
 
@@ -7,9 +7,7 @@ Cada alumno va a corregir dos trabajos de sus compañeros. Esta coevaluación ti
 Tu trabajo pesa un 80% en la calificación.
 
 
-# Aspectos a puntuar. Rúbrica
-
-La evaluación se basará en esta rúbrica:
+# Aspectos a puntuar. Guía de evaluación
 
 <table>
   <thead>
