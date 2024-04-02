@@ -10,6 +10,9 @@ https://lenguajejs.com/javascript/introduccion/funciones/
 
 ## Resumen: declaración de función vs expresión de función
 
+![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/ba688796-4636-4698-b3a3-ead50730ecea) VS 
+
+
 - Las funciones son valores. Se pueden asignar, copiar o declarar en cualquier lugar del código.
 
 - Si la función se declara como una declaración separada en el flujo del código principal, eso se llama “Declaración de función”.
