@@ -1,4 +1,4 @@
-# TIENDA ONLINE: Frutería DAW
+# TIENDA ONLINE DINÁMICA CON JS: Frutería DAW
 
 ![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/88e9578a-fe75-4994-94c1-678a7ac8e790)
 
