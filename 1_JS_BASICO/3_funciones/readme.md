@@ -78,3 +78,17 @@ Cuando se ejecuta fA(fB, fError), fA generará un número aleatorio. Si ese núm
 Si el número es 2 o menor, se ejecutará fError, imprimiendo "Error" en la consola.
 
 Entonces, cada vez que ejecutes fA(fB, fError), obtendrás uno de estos dos mensajes en la consola, dependiendo del valor aleatorio generado.
+
+### Operador ~~ de doble negación
+
+Conversión de números en coma flotante a enteros:
+
+- Cuando se aplica ~~ a un número en coma flotante, JavaScript primero lo convierte en un entero.
+- Luego, se realiza una operación de doble negación. La primera negación convierte el número en un entero negativo si no lo es, y la segunda negación lo convierte de vuelta a un entero positivo.
+- En términos prácticos, esto resulta en un redondeo hacia abajo del número en coma flotante al entero más cercano hacia cero.
+
+En el ejemplo anterior, ~~3.7 convertirá 3.7 en el entero más cercano hacia cero, que es 3.
+
+Es importante tener en cuenta que este operador se utiliza generalmente para realizar operaciones de redondeo rápido y puede no ser tan explícito o fácil de entender como otros métodos de redondeo en JavaScript. 
+
+Por lo tanto, es posible que prefieras usar **Math.floor(), Math.ceil(), o Math.round()** para operaciones de redondeo más claras y legibles en tu código.
