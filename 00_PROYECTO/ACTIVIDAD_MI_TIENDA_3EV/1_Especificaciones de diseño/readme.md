@@ -40,4 +40,5 @@ En el caso de que no se haya comprado ningún producto, decide como mostrarlo:
 
 Especificaciones sobre el formulario de inicio/registro:
 
-https://github.com/profeMelola/LM-09-2023-24/tree/main/_PROYECTO/ACTIVIDAD_MI_TIENDA_3EV/formulario
+https://github.com/profeMelola/LM-09-2023-24/tree/main/00_PROYECTO/ACTIVIDAD_MI_TIENDA_3EV/3_Formulario
+
