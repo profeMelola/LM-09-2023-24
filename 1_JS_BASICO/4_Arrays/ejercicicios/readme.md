@@ -23,19 +23,19 @@ https://lenguajejs.com/javascript/arrays/array-functions/
 const losSimpson = ['Homer', 'Marge', 'Lisa', 'Bart', 'Maggie'];
 ```
 
-## Obtener elementos del array que empiecen por una letra concreta (filter: extrae varios elementos)
+## 1. Obtener elementos del array que empiecen por una letra concreta (filter: extrae varios elementos)
 
 ![image](https://user-images.githubusercontent.com/91023374/229094992-a56a104d-c897-49a5-8435-23d3046d9ae7.png)
 
-## Obtener primer elemento que empiece por M (find: extrae solo un elemento)
+## 2. Obtener primer elemento que empiece por M (find: extrae solo un elemento)
 
-## Contar cuantas letras suman todos los nombres del array (reduce: calcula un valor que devuelve) 
+## 3. Contar cuantas letras suman todos los nombres del array (reduce: calcula un valor que devuelve) 
         
-## Convertir todos los nombres a mayúsculas (map: transforma el contenido de un array)
+## 4. Convertir todos los nombres a mayúsculas (map: transforma el contenido de un array)
 
-## Rellenar un array con un valor concreto (fill: sustituye todo el contenido de un array con un nuevo contenido)
+## 5. Rellenar un array con un valor concreto (fill: sustituye todo el contenido de un array con un nuevo contenido)
 
-## Mostrar cuantas letras contiene cada nombre (forEach: recorre un array obteniendo su posición y valor)
+## 6. Mostrar cuantas letras contiene cada nombre (forEach: recorre un array obteniendo su posición y valor)
 
 ## Devolver false si todos los nombres no contienen la letra a (every: igual que some pero debe cumplirse siempre)
 
