@@ -110,8 +110,8 @@ Tu trabajo pesa un 80% en la calificación.
 Lunes 13 de mayo a las 10:00
 
 # Fecha prevista para corregir en clase
-Martes 14 de mayo
+(Provisional) Martes 14 de mayo
 
 # Fecha límite para corregir
-Sábado 18 de mayo a las 10:00
+(Provisional) Sábado 18 de mayo a las 10:00
 
