@@ -13,17 +13,38 @@
              * puede tener return o no....
              */
             const message = 'Text example';
+
+            // Forma1: Declaración de función
+            function saludar1(name){
+                // return "Hello "+name;
+                // return 'Hello' +name; //es lo mismo
+                return `Hello ${name}`;
+            }
+
+            // Forma 2: Expresión de función (función anónima)
+            const saludar2 = function (name){
+                return `Hello ${name}`;
+            };
+
+            // Forma 3: lambda
             const sayHello = (name) => `Hello ${name}`; // En una única línea
                                                         // Ya retorna lo que le digamos. 
-                                                        // No hace falta poner corchetes
+                                                        // No hace falta poner llaves
                                                         // ni return
+            
+            // Si hay más de una instrucción.... obligatorio llaves!!!
             const sayBye = (name) => {
-                console.log("message:"+message);
+                console.log(name);
                 return `Bye ${name}`
             }
 
             console.log(sayHello('Mari'));
-            console.log(sayBye('Mari'));
+
+            console.log(saludar1('Javi'));
+
+            console.log(saludar2('Ana'));
+
+            console.log(sayBye('Pepe'));
 
         </script>
     </body>

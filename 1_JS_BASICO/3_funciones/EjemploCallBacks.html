@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Callbacks</title>
+</head>
+
+<body>
+    <script>
+        debugger;
+        // fB = Función B (callback)
+        const fB = function () {
+            console.log("Función B ejecutada.");
+        };
+
+        // fError = Función Error (callback)
+        const fError = function () {
+            //console.error("Error");
+            console.log("Error");
+        };
+
+        // fA = Función A
+        const fA = function (callback, callbackError) {
+            const n = ~~(Math.random() * 5);
+            if (n > 2) callback();
+            else callbackError();
+        };
+
+        for (let index = 0; index < 3; index++) {
+            fA(fB, fError); // Si ejecutamos varias veces, algunas darán error y otras no            
+        }
+        
+    </script>
+</body>
+
+</html>
