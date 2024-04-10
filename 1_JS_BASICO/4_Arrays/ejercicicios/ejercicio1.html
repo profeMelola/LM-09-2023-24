@@ -8,24 +8,71 @@
 <body>
     <script>
         const numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+        console.log(numeros);
+
+        let num = numeros.pop();
+        console.log(num);
+
+        console.log(numeros);
+
+        console.log(typeof numeros);
+
+        console.log("longitud:",numeros.length);
+        console.log("longitud:"+numeros.length);
+
+        console.log("Primera posición:");
+        console.log(numeros[0]);
+        console.log(numeros.at(0));
+        console.log(numeros.shift());
+
+        console.log("Penúltima posición:");
+        console.log(numeros.at(-2));
+        console.log(numeros[numeros.length -2]);
+
+        numeros.length = 5;
+        console.log("truncados",numeros);
+
+        mostrarPares();
 
         // muestra por consola los pares
         function mostrarPares(){
             // Forma tradicional
             for (let index = 0; index < numeros.length; index++) {
-                const element = numeros[index];
+                if (numeros[index] % 2 == 0)
+                    console.log("FOR TRADICIONAL",`El numero ${numeros[index]} es par`);
                 
             }
 
             // For of
+            for (const num of numeros) {
+                if (num % 2 == 0)
+                    console.log("FOR OF",`El numero ${num} es par`);
+                
+            }
 
-            // Forecha
+            // Foreach
+            numeros.forEach(num => {
+                if (num % 2 == 0)
+                    console.log("FOREACH",`El numero ${num} es par`);
+            });
         }
 
         // devuelve la suma
         function getSumNumsArray(){
-
+            let total = 0;
+            for (const n of numeros) {
+                total += n;
+            }
+            return total;
         }
+
+        console.log("La suma:",getSumNumsArray());
+
+        // Prueba...
+        let f = function (){
+            console.log("hola");
+        };
+        console.log(f);
 
     </script>
 </body>
