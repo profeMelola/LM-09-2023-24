@@ -70,7 +70,9 @@ Tu trabajo pesa un 80% en la calificación.
       <td>10</td>
     </tr>
     <tr>
-      <td>FORMULARIO: l formulario aparece (al seleccionar la opción) y desaparece (al hacer el submit) incluido en la propia página de la tienda o en una ventana emergente dejando la tienda siempre visible (no otra página nueva)</td>
+      <td>FORMULARIO: l formulario aparece (al seleccionar la opción) y desaparece (al hacer el submit) 
+      <del>
+      incluido en la propia página de la tienda o en una ventana emergente dejando la tienda siempre visible (no otra página nueva)</del></td>
       <td>5</td>
     </tr>
     <tr>

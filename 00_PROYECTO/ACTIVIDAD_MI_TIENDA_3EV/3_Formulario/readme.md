@@ -30,7 +30,7 @@ El diseño y apariencia del formulario es libre.
 
 Haz que apareza y desaparezca una vez que el usuario se ha registrado o iniciado sesión. 
 
-Ten en cuenta que siempre debe quedar la página principal de la tienda visible.
+<del>Ten en cuenta que siempre debe quedar la página principal de la tienda visible.</del>
 
 ## Javascript en el formulario
 
