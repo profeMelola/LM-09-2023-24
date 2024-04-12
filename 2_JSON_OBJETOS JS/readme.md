@@ -13,13 +13,13 @@ https://lenguajejs.com/javascript/objetos/json/
 
 https://lenguajejs.com/javascript/objetos/que-son/
 
-## Recursos
+## Recursos extra
 
 https://es.javascript.info/object
 
 https://es.javascript.info/object-methods
 
-https://es.javascript.info/prototype-inheritance
+(No forma parte del ámbito de este curso) https://es.javascript.info/prototype-inheritance
 
 
 # Clases
