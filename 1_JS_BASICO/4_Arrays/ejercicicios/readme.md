@@ -57,7 +57,7 @@ const losSimpson = ['Homer', 'Marge', 'Lisa', 'Bart', 'Maggie'];
 Programa una función que devuelva la suma total de caracteres de las palabras del array que contengan la letra 'R'.
 
 ```
-cons arrayRGB = ["rojo","verde","azul"]
+const arrayRGB = ["rojo","verde","azul"]
 ```
 
 No debe ser case-sensitive, por tanto rojo y verde si contienen la letra R.
