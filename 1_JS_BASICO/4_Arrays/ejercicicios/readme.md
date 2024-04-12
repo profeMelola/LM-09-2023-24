@@ -37,7 +37,7 @@ const losSimpson = ['Homer', 'Marge', 'Lisa', 'Bart', 'Maggie'];
 
 ## 6. Mostrar cuantas letras contiene cada nombre (forEach: recorre un array obteniendo su posición y valor)
 
-## Devolver false si todos los nombres no contienen la letra a (every: igual que some pero debe cumplirse siempre)
+## 7. Devolver false si todos los nombres no contienen la letra a (every: igual que some pero debe cumplirse siempre)
 
 ## Preguntar si existe una cadena concreto (independientemente de si está en may o min) (some: te dice si un array cumple la condición en algún momento)
 
