@@ -89,7 +89,25 @@ const baseDeDatos =[
 
 https://es.javascript.info/data-storage
 
+## LocalStorage
+
 Solo vamos a trabajar con **LocalStorage**
+
+Las principales funcionalidades de localStorage son:
+
+- Es compartido entre todas las pestañas y ventanas del mismo origen.
+- Los datos no expiran. 
+- Persisten a los reinicios de navegador y hasta del sistema operativo.
+
+
+![alt text](image.png)
+
+
+## SessionStorage
+
+El objeto **sessionStorage** se utiliza mucho menos que localStorage.
+
+Las propiedades y métodos son los mismos, pero es mucho más limitado ya que sessionStorage solo existe dentro de la pestaña actual del navegador. Otra pestaña con la misma página tendrá un almacenaje distinto.
 
 https://es.javascript.info/localstorage
 
