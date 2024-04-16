@@ -22,6 +22,20 @@ https://es.javascript.info/array-methods
 
 ![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/0759f33a-adbd-470f-9627-7f6f96e24d64)
 
+![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/cdfaf7f8-33c5-4866-86bd-a739f4443530)
+
+
+## Operador spread
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/9a58b0d6-b0ec-4ec7-ae53-35648aef4422)
+
+![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/8577dab0-dc18-4e3d-b149-9d7a4937760e)
+
+
+
+
 
 ## Clonar Array en JS
 
