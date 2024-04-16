@@ -16,6 +16,13 @@ https://es.javascript.info/array-methods
 
 ![image](https://user-images.githubusercontent.com/91023374/227930956-15bf2afc-a471-414b-9ad7-9ed277c326f6.png)
 
+## Resumen métodos de arrays
+
+https://es.javascript.info/array-methods
+
+![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/0759f33a-adbd-470f-9627-7f6f96e24d64)
+
+
 ## Clonar Array en JS
 
 https://midu.dev/como-clonar-un-array-en-javascript/
