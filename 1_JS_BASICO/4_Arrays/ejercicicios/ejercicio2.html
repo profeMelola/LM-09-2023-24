@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 arrays - Los Simpson</title>
+</head>
+<body>
+    <script>
+        const losSimpson = ['Homer','Marge','Lisa','Bart','Maggie'];
+
+        // ----------------------------------------------
+        // 1. Obtener elementos del array que empiecen por una letra concreta (nuevo array)
+        // filter: extrae varios elementos        
+        // Devuelve un array con dichos nombres
+
+        console.log("------------------- 1 -------------------");
+        console.log("Forma imperativa:");
+        console.log(nombresEmpiecenPor('M'));
+
+        // Forma declarativa funcional
+        console.log("Forma declarativa:");
+        console.log(losSimpson.filter( nombre => nombre.charAt(0) === 'M'));
+        console.log(losSimpson.filter( nombre => nombre[0] === 'M'));
+
+        // Forma imperativa
+        function nombresEmpiecenPor(letra){
+            // Recorrer elemento a elemento
+            // Comprobar por cada elemento si su primera letra es igual a la pasada por argumento
+            // Relleno un array con esa letra
+
+            let nombres = [];
+
+            for (const nombre of losSimpson) {
+                if (nombre.charAt(0) === letra){
+                    nombres.push(nombre);
+                }
+            }
+
+            // for (let index = 0; index < losSimpson.length; index++) {
+            //     let nombre = losSimpson[index];
+            //     let cont = 0;
+            //     if (nombre.charAt(0) === letra){
+            //         nombres[cont] = nombre;
+            //         cont++;
+            //     }
+                
+            // }
+
+            return nombres;
+        }
+
+        // ----------------------------------------------
+        //2. Obtener primer elemento que empiece por M
+        //find: extrae solo un elemento
+        // Devuelve un elemento
+        //console.log(primerNombreEmpiecePor('M'));   
+        console.log("------------------- 2 -------------------");
+
+        let letra = 'M';
+        //console.log(losSimpson.find(nombre => nombre[0] == 'M'));
+        console.log("Forma declarativa:");
+        console.log(losSimpson.find(nombre => nombre[0] == letra));
+
+        function primerNombreEmpiecePor(letra){
+            for (const nombre of losSimpson) {
+                if (nombre.charAt(0) === letra)
+                    return nombre;
+            }
+        }
+        console.log("Forma imperativa:",primerNombreEmpiecePor(letra));
+
+        console.log("------------------- 3 -------------------");
+        //3. Contar cuantas letras suman todos los nombres del array
+        // reduce: calcula un valor que devuelve
+        // El segundo parámetro es el valor inicial
+        console.log("Forma declarativa:");
+        const funcion = (total,nombre) => total+nombre.length;
+        console.log(typeof funcion);
+        console.log(losSimpson.reduce(funcion ,0));
+
+        console.log(losSimpson.reduce((total,nombre)=>total+nombre.length,0));
+
+        console.log("Forma imperativa:");
+        console.log(contarTodasLetras());
+
+        function contarTodasLetras(){
+            let total = 0;
+
+            for (const nombre of losSimpson) {
+                //total += nombre.length;
+                total += nombre.length;
+            }
+
+            return total;
+        }
+        
+        console.log("------------------- 4 -------------------");
+        //4. Convertir todos los nombres a mayúsculas
+        //map: transforma el contenido de un array
+        console.log(losSimpson.map(nombre => nombre.toUpperCase())); 
+        
+        
+        // HACER UNA FUNCIÓN QUE DEVUELVA UN NUEVO ARRAY CON EL CONTENIDO DE UN ARRAY PASADO A MAY
+        const valores = 'uno,dos,tres,cuatro';
+        const arrayValores = valores.split(',');
+
+        console.log("ARRAY_ORIGINAL:",arrayValores);
+
+        function arrayConvertidoMay(){
+            let nuevoArray = []; 
+
+            // for (const valor of arrayValores) {
+            //     nuevoArray.push(valor.toUpperCase());
+            // }
+
+            for (let index = 0; index < arrayValores.length; index++) {
+                nuevoArray[index] = arrayValores[index].toUpperCase();
+                
+            }
+
+            return nuevoArray;
+
+        }
+
+        console.log("ARRAY_CONVERTIDO_MAY:",arrayConvertidoMay());
+
+        
+        console.log("------------------- 5 -------------------");
+        // 5. Rellenar un array con un valor concreto 
+        // fill: sustituye todo el contenido de un array con un nuevo contenido)
+        console.log("Array sin tamaño:",[].fill('X'));
+        console.log("Array con tamaño:",Array(5).fill('Y'));
+
+
+        console.log("------------------- 6 -------------------");
+        // 6. Mostrar cuantas letras contiene cada nombre 
+        //forEach: recorre un array obteniendo su posición y valor)
+        losSimpson.forEach(nombre => console.log(`El personaje ${nombre} contiene ${nombre.length} letras`));
+
+        losSimpson.forEach(nombre => console.log("El personaje"+ nombre+" contiene"+ nombre.length+" letras"));
+
+        for (const nombre of losSimpson) {
+            console.log(`El personaje ${nombre} contiene ${nombre.length} letras`)
+        }
+
+
+        losSimpson.forEach((nombre,pos) => console.log(`La palabra ${nombre} en la posición ${pos}, contiene ${nombre.length} letras`))
+
+        console.log("------------------- 7 -------------------");
+        // 7. Devolver false si todos los nombres no contienen la letra a 
+        //every: igual que some pero debe cumplirse siempre)
+        letra = 'a';
+        console.log(losSimpson.every(nombre => nombre.includes(letra)));
+
+        console.log("------------------- 8 -------------------");
+        // 8. Devolver true si alguno de los nombres contiene la letra a 
+        // some
+        // ----------------------------- Declarativo ----------------
+        letra = 'A';
+        // Es sensible a may y min
+        console.log(losSimpson.some(nombre => nombre.includes(letra)));
+        // No sea sensible a may y min
+        console.log(losSimpson.some(nombre => nombre.toUpperCase().includes(letra.toUpperCase())));
+
+
+        letra = 'h'; // no sensible a may y min
+
+        const f = nombre => nombre.toUpperCase().includes(letra.toUpperCase);
+
+        // const f2 = function (nombre,letra){
+        //     console.log('letra dentro f2:',letra)
+        //     if (nombre.includes(letra)){
+        //         return true;
+        //     }
+        // }
+
+        // function f3 (nombre, letra){
+        //     if (nombre.includes(letra)){
+        //         return true;
+        //     }
+        // }
+
+        // const f2 = function (nombre){
+        //     if (nombre.includes('H')){
+        //         return true;
+        //     }
+        // }
+
+        // function f3 (nombre, pos){
+        //     if (nombre.includes('H')){
+        //         return true;
+        //     }
+        // }
+
+        console.log("f:",losSimpson.some(f));
+        // console.log("f2:",losSimpson.some(f2));
+        // console.log("f3:",losSimpson.some(f3));
+        console.log("f4:",losSimpson.some(nombre => nombre.toUpperCase().includes(letra.toUpperCase)));
+
+        // ----------------------------- Imperativa ----------------
+        function algunoContieneLetra(letra){
+            for (const nombre of losSimpson) {
+                if(nombre.includes(letra))
+                    return true;
+            }
+            return false;
+        }
+
+        console.log("imperativo:",algunoContieneLetra(letra));
+
+
+
+        console.log("------------------- 9 -------------------");
+        // 9. Busca si existe un elemento dentro de un array (includes)
+        console.log(losSimpson.includes('bart'));
+        console.log(losSimpson.map(nombre => nombre.toUpperCase()).includes('baRt'.toUpperCase()));
+
+        console.log("------------------- 10 -------------------");
+        // 10. Concatenar dos arrays
+
+        console.log(losSimpson.concat([5,"otra cosa"])); //no tiene por qué ser del mismo tipo
+        console.log(losSimpson.concat(['Moe','Barney']));
+
+        console.log("------------------- 11 -------------------");
+        // 11. Obtener un subarray
+        console.log(losSimpson.slice(2,4)); // primer incluido, último no incluido
+
+        console.log("------------------- 12 -------------------");
+        // 12. Unir en un string todos los elementos del array por un separador
+        console.log(losSimpson.join("--"));
+
+        console.log("------------------- 13 -------------------");
+        // 13. Separar en un array una cadena de texto (por un separador)
+        const cadena = "Homer--Marge--Lisa--Bart--Maggie";
+        console.log(cadena.split("--"));
+
+    </script>
+</body>
+</html>

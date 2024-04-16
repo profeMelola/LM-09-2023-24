@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio 3</title>
+</head>
+
+<body>
+  <script>
+    const arrayRGB = ["rojo", "verde", "azul"];
+
+    // ----------- SOLUCIÓN IMPERATIVA ----------------
+    let letra = "R";
+
+    console.log("ClasicaRnR, total:", clasicaRnR(letra));
+        
+        function clasicaRnR(letra) {
+            let total = 0;
+            //let total; //NaN
+
+            for (const color of arrayRGB) {
+                if (color.toUpperCase().includes(letra.toUpperCase())) {
+                    total += color.length;
+                }
+            }
+
+            return total;
+
+        }    
+
+    // ----------- SOLUCIÓN MIX DAW A -----------------
+    let total = 0;
+        let contador = 1;
+        const verSi = (letra) => {
+            console.log("letra dentro lambda",letra);
+            for (const color of arrayRGB) {
+                if (color.toLowerCase().includes(letra.toLowerCase())) {
+                    console.log("Elemento ", contador, " : ", color, " con ", color.length, " letras");
+                    total += color.length;
+                    contador++;
+                }
+            }
+            return total;
+        }
+        console.log("Mix, total:"+verSi(letra));
+    
+    // ----------- SOLUCIÓN REMEZCLILLO DAW B----------------
+    console.log(SumaR(arrayRGB));
+
+    function SumaR(array) {
+      return array.reduce((suma, palabra) => {
+        if (palabra.toLowerCase().includes("r")) {
+          return suma + palabra.length;
+        } else {
+          return suma;
+        }
+      }, 0);
+    }
+
+    // ----------- SOLUCIÓN FUNCIONAL ----------------
+    console.log(arrayRGB
+      .filter(color => color.toUpperCase().includes(letra.toUpperCase()))
+      .reduce((total, color) => total + color.length, 0));
+
+
+    console.log(arrayRGB.filter(color => color.toLowerCase().includes(letra.toLowerCase())));
+    let sumatorioLetras = arrayRGB.filter(color => color.toLowerCase().includes(letra.toLowerCase()))
+      .reduce((total, color) => total + color.length, 0);
+    console.log("Array function:", sumatorioLetras);
+
+
+  </script>
+</body>
+
+</html>
