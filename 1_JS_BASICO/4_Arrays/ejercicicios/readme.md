@@ -37,19 +37,19 @@ const losSimpson = ['Homer', 'Marge', 'Lisa', 'Bart', 'Maggie'];
 
 ## 6. Mostrar cuantas letras contiene cada nombre (forEach: recorre un array obteniendo su posición y valor)
 
-## Devolver false si todos los nombres no contienen la letra a (every: igual que some pero debe cumplirse siempre)
+## 7. Devolver false si todos los nombres no contienen la letra a (every: igual que some pero debe cumplirse siempre)
 
-## Preguntar si existe una cadena concreto (independientemente de si está en may o min) (some: te dice si un array cumple la condición en algún momento)
+## 8. Preguntar si existe una cadena concreto (independientemente de si está en may o min) (some: te dice si un array cumple la condición en algún momento)
 
-## Busca si existe un elemento dentro de un array (includes)
+## 9. Busca si existe un elemento dentro de un array (includes)
 
-## Concatenar dos arrays
+## 10. Concatenar dos arrays
 
-## Obtener un subarray
+## 11. Obtener un subarray
 
-## Unir en un string todos los elementos del array por un separador
+## 12. Unir en un string todos los elementos del array por un separador
 
-## Separar en un array una cadena de texto (por un separador)
+## 13. Separar en un array una cadena de texto (por un separador)
 
 
 # Ejercicio 3: hazlo tú solo
@@ -57,7 +57,7 @@ const losSimpson = ['Homer', 'Marge', 'Lisa', 'Bart', 'Maggie'];
 Programa una función que devuelva la suma total de caracteres de las palabras del array que contengan la letra 'R'.
 
 ```
-cons arrayRGB = ["rojo","verde","azul"]
+const arrayRGB = ["rojo","verde","azul"]
 ```
 
 No debe ser case-sensitive, por tanto rojo y verde si contienen la letra R.
