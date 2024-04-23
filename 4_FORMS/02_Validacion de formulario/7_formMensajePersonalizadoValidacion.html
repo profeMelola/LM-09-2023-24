@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        /*background-color: #1b1b32;*/
+        /*color: #f5f6f7;*/
+        font-family: Tahoma;
+        font-size: 16px;
+      }
+
+      h1,
+      p {
+        margin: 1em auto;
+        text-align: center;
+      }
+
+      form {
+        width: 60vw;
+        max-width: 500px;
+        min-width: 300px;
+        margin: 0 auto;
+        padding-bottom: 2em;
+      }
+
+      fieldset {
+        border: none;
+        padding: 2rem 0;
+      }
+
+      fieldset:not(:last-of-type) {
+        border-bottom: 3px solid #3b3b4f;
+      }
+
+      label {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      input,
+      textarea,
+      select {
+        margin: 10px 0 0 0;
+        width: 100%;
+        min-height: 2em;
+      }
+
+      input,
+      textarea {
+        /*background-color: #0a0a23;*/
+        border: 1px solid #0a0a23;
+        /*color: #ffffff;*/
+      }
+
+      .inline {
+        width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle;
+      }
+
+      input[type="submit"] {
+        display: block;
+        width: 60%;
+        margin: 1em auto;
+        height: 2em;
+        font-size: 1.1rem;
+        background-color: #3b3b4f;
+        border-color: white;
+        min-width: 300px;
+        color: #ffffff;
+      }
+
+      input[type="file"] {
+        padding: 1px 2px;
+      }
+
+      a {
+        color: #dfdfe2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Formulario de registro</h1>
+      <!-- con la propiedad novalidate se deshabilitan las validaciones html5 -->
+      <!--<form action="" name="formRegistro" novalidate>-->
+      <form action="" name="formRegistro">
+      <fieldset>
+        <label>Dirección completa:
+          <textarea
+            name="direccion"
+            rows="5"
+            cols="30"
+            placeholder="Ejemplo: C. Vitoria, 3, 28804 Alcalá de Henares, Madrid"
+            minlength="10"
+            required></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+
+    <script>
+      // ---------------------------------------
+      // EVENTO INPUT DEL TEXTAREA
+      // SE LANZA CAPA VEZ QUE HAY UNA MODIFICACIÓN EN EL TEXTO DEL INPUT
+
+      document.formRegistro.direccion.addEventListener('input', e => {
+        console.log(e.target.validity.tooShort);
+        if (e.target.validity.tooShort) {
+          e.target.setCustomValidity("Dirección demasiado corta. No has escrito la dirección de envío completa");
+        }
+        else
+          e.target.setCustomValidity("");
+      });
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar con JS MIXTO (novalidate)</title>
+</head>
+
+<body>
+    <h1>Validación MIXTA - HTML5 + JS (novalidate)</h1>
+    <h2>El campo "name" es obligatorio y su longitud mínima debe ser 5</h2>
+    <form name="myForm" action="../submit.html" method="post" novalidate>
+        Name: <input type="text" name="fname" id="fname" minlength="5" required>
+        <input type="submit" value="Submit">
+    </form>
+    <p></p>
+
+    <script>
+
+        const aviso = document.querySelector('p');
+
+        document.forms[0].addEventListener('submit', e => {
+            console.log("[SUBMIT] fname.checkValidity()",fname.checkValidity());
+            console.log(fname.checkValidity());
+
+            if (fname.checkValidity()) {
+                alert("correcto!!!!");
+                aviso.textContent = "Sin error...";
+            }
+            else {
+                //Al indicar que el form es novalidate, sí pasa por aquí y puedo controlarlo manualmente... 
+                alert("incorrecto!!!!");
+
+                // Para que no haga el submit tengo que detener el evento con preventDefault!!!
+                e.preventDefault();
+
+                checkError();
+            }
+        });
+
+        function checkError() {
+            console.log("fname.validity.tooShort",fname.validity.tooShort);
+            
+            aviso.textContent = "Pesaooo!!! escribe más!!!!!";
+        }
+
+    </script>
+</body>
+
+</html>

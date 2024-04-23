@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar sin botón submit</title>
+    <script>
+        function validateForm() {
+            const x = document.getElementById("fname").value;
+            if (x == "") {
+                alert("Majete!!! rellena el campo");
+            }
+            else{
+                document.forms[0].submit();
+            }
+                
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Validación pura JS - sin botón/input tipo submit</h1>
+    <h2>El campo "name" es obligatorio</h2>    
+
+    <form name="myForm" action="../submit.html" method="post">
+        Name: <input mitype="text" name="fname" id="fname">
+    </form>
+
+    <p>
+        <a href="javascript:validateForm()">Enviar formulario</a>
+    </p>
+
+</body>
+
+</html>
