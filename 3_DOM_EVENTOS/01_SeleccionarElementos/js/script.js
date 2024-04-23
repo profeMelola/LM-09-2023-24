@@ -30,9 +30,11 @@ const list_elements = document.querySelectorAll("li");
 console.log(`list_elements:${list_elements}`);
 console.log(list_elements); //nodelist
 
+
 const list2 = document.getElementsByTagName("li");
 console.log(`list 2:${list2}`);
 console.log(list2); //html collection
+
 
 for(const item of list2){
     item.style.fontSize="4rem";

@@ -42,9 +42,9 @@
         };
 
         //machaca la función anterior
-        enlace.onclick = function (evento){
+        enlace.onclick = function (eventito){
             alert("He capturado el evento tipo 2 pasando el evento y no dejo conectarse");
-            evento.preventDefault();
+            eventito.preventDefault();
         };
 
         enlace.onclick = (evento) => {
@@ -52,10 +52,16 @@
             evento.preventDefault();
         };
 
-        /* ************** EVENTOS: FORMA 3 ************** */
+        // /* ************** EVENTOS: FORMA 3 ************** */
         const enlaceTipo3 = document.getElementById("tipo3");
 
         //enlaceTipo3.addEventListener('click',avisar);
+
+        enlaceTipo3.addEventListener('click',prueba);
+
+        function prueba(){
+            alert("pruebaaaaaaaaaaa");
+        }
 
         enlaceTipo3.addEventListener('click',function (event){
             alert("Has pulsado en el enlace de GOOGLE");
@@ -70,6 +76,7 @@
                 event.preventDefault();
         });
 
+        
 
 
 

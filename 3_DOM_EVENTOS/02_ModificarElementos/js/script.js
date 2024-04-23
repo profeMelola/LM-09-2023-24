@@ -21,7 +21,7 @@ inner.id = "NO";
 // console.log(inner.attributes);
 if (inner.hasAttribute("id")) console.log(inner.getAttribute("id"));
 
-//inner.draggable=true;
+inner.draggable=true;
 //inner.hidden=true;
 
 // Hay más propiedades!!!! estamos practicando con las más importantes!!!!
