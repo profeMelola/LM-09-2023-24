@@ -98,7 +98,18 @@ function renderizarProductos() {
         miNodoBoton.classList.add('btn', 'btn-primary');
         miNodoBoton.textContent = '+';
         miNodoBoton.setAttribute('marcador', producto.id);
-         miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
+        miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
+
+        //  miNodoBoton.addEventListener('click',function(){
+        //     carrito.push(producto.id);
+        //     renderizarCarrito();
+        //  });
+
+        //  miNodoBoton.addEventListener('click', () =>{
+        //     alert("lambda!!!");
+        //     carrito.push(producto.id);
+        //     renderizarCarrito();
+        //  });
 
         //Añadimos hijos a la ficha CardBody
         miNodoCardBody.append(miNodoImg);
@@ -205,8 +216,22 @@ function getNumUnidades(id) {
  * Evento para borrar un elemento del carrito (completo, con todas unidades)
  */
 function borrarItemCarrito(evento) {
-    alert("Borrando item carrito");
-    console.log("id",evento.target.dataset.idProducto);
+    const idBorrar = evento.target.dataset.idProducto;
+
+    // const nuevoCarrito = [];
+    // for (const id of carrito) {
+    //     if (id != idBorrar)
+    //         nuevoCarrito.push(id);
+    // }
+
+    // carrito = nuevoCarrito;
+
+    carrito = carrito.filter( id => (id != idBorrar) );
+
+    renderizarCarrito();
+
+
+
 }
 
 /**
@@ -229,13 +254,20 @@ function calcularTotal() {
  * Varia el carrito y vuelve a dibujarlo
  */
 function vaciarCarrito() {
-    carrito = [];
+    
+
+    if (confirm('¿Seguro que quieres vaciar el carrito?')){
+        carrito = [];
+
+    }
     renderizarCarrito();
 }
 
 // -----------------------------------------------------------------------------
 // Eventos
 // -----------------------------------------------------------------------------
+DOMbotonVaciar.addEventListener('click',vaciarCarrito);
+
 
 // -----------------------------------------------------------------------------
 // LocalStorage
@@ -257,8 +289,13 @@ function cargarCarritoDeLocalStorage(){
 // renderizarCarrito(); //para cargar los productos en el carrito (ul con id="carrito")
 
 
-window.onload = cargarCarritoDeLocalStorage;
-window.onload = renderizarProductos;
-window.onload = renderizarCarrito;
+// MAl!!!!!!!!! solo se ejecuta la última función
+// window.onload = cargarCarritoDeLocalStorage;
+// window.onload = renderizarProductos;
+// window.onload = renderizarCarrito;
+
+window.addEventListener('load',cargarCarritoDeLocalStorage);
+window.addEventListener('load',renderizarProductos);
+window.addEventListener('load',renderizarCarrito);
 // -----------------------------------------------------------------------------
 
