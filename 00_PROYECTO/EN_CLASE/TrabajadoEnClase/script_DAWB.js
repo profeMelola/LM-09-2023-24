@@ -103,8 +103,18 @@ function renderizarProductos() {
         miNodoBoton.classList.add('btn','btn-primary');
         miNodoBoton.textContent = '+';
         miNodoBoton.setAttribute('marcador',producto.id);
-        //pendiente (aprender eventos)
+
+        // 2 FORMAS DE GESTIONAR EL EVENTO
+        // FORMA 1: luego con getAttribute obtengo el id del event.target...
         miNodoBoton.addEventListener('click',anyadirProductoAlCarrito);
+
+        // FORMA 2:
+        // miNodoBoton.addEventListener('click',function(){
+        //     alert("AÑADO FORMA 2!!!!"+producto.id);
+        //     carrito.push(producto.id);
+        //     renderizarCarrito();            
+        // });
+
 
 
         // Añado los hijos al div de cada producto
@@ -135,21 +145,71 @@ function renderizarProductos() {
  * Evento para añadir un producto al carrito de la compra
  */
 function anyadirProductoAlCarrito(evento) {
-    alert("Producto añadido al carrito!!!!");
+    //añadir el id (que está en el marcador) al array
+    carrito.push(evento.target.getAttribute('marcador'));
+    console.log("id añadido al carrito",evento.target.getAttribute('marcador'));
+
+    renderizarCarrito();
+
 }
 
 /**
  * Dibuja todos los productos guardados en el carrito
  */
 function renderizarCarrito() {
-    console.log("Estoy en renderizar carrito");
+    console.log("Estoy en renderizar carrito!!!");
+
+    DOMcarrito.innerHTML = ""; // borro los li del carrito
+
+    const carritoSinDuplicados = new Set(carrito);
+
+    carritoSinDuplicados.forEach( idProducto => {
+
+        // Buscar el producto por id y obtener el objeto producto
+        const producto = getItem(idProducto);
+        console.log("Producto:",producto);
+
+        // Obtener el número de unidades compradas el producto
+        const numUnidadesProducto = getNumUnidades(idProducto);
+        console.log("numUnidadesProducto:",numUnidadesProducto);
+
+        // Crear el nodo <li>
+        // <li class="list-group-item text-right mx-2">
+        // 2 x Calabacin - 2.1€
+        // <button class="btn btn-danger mx-5" data-item="3" style="margin-left: 1rem;">X</button>
+        // </li>
+
+        const miLi = document.createElement('li');
+        miLi.classList.add('list-group-item','text-right','mx-2');
+        miLi.textContent = `${numUnidadesProducto} X ${producto.nombre} - ${producto.precio}${divisa}`;
+
+        const miBoton = document.createElement('button');
+        miBoton.classList.add('btn','btn-danger','mx-5');
+        miBoton.dataset.idProducto = producto.id;
+        miBoton.style.marginLeft = '1rem';
+        miBoton.textContent = 'X';
+        miBoton.addEventListener('click',borrarItemCarrito);
+
+        miLi.append(miBoton);
+
+        DOMcarrito.append(miLi);
+
+
+    });
+
+    // Calcular precio total
+    DOMtotal.textContent = calcularTotal();
+
+    guardarCarritoEnLocalStorage();
+
 }
 
 /**
- * Devuelve el item del carrito
+ * Devuelve el item (objeto) del carrito
  */
 function getItem(id){
 
+    return baseDeDatos.find( producto => producto.id == id);
 }
 
 
@@ -157,21 +217,63 @@ function getItem(id){
  * Devuelve el número de unidades de un mismo producto en el carrito
  */
 function getNumUnidades(id){
+    // let cont = 0;
 
+    // for (const producto of baseDeDatos) {
+    //     if (producto.id == id)
+    //         cont++;
+    // }
+
+    // return cont;
+
+    return carrito.filter( itemId => itemId == id).length;
 }
 
 
 /**
  * Evento para borrar un elemento del carrito
  */
-function borrarItemCarrito(evento) {
+function borrarItemCarrito(eventito) {
 
+    const idBorrar = eventito.target.dataset.idProducto;
+    console.log("id a borrar:",idBorrar);
+
+    // FORMA 1
+    // let nuevoCarrito = [];
+
+    // for (const id of carrito) {
+    //     if (id != idBorrar)
+    //         nuevoCarrito.push(id);
+    // }
+
+    // // carrito.forEach((id) => {
+    // //     if (id != idBorrar)
+    // //         nuevoCarrito.push(id);
+    // // });
+
+    // carrito = nuevoCarrito;
+
+    // -----------------------------
+    // FORMA 2
+    carrito = carrito.filter( id => id != idBorrar);
+
+    renderizarCarrito();
+    
 }
 
 /**
  * Calcula el precio total teniendo en cuenta los productos repetidos
  */
 function calcularTotal() {
+    let total = 0;
+
+    for (const id of carrito) {
+        const objProducto = getItem(id);
+
+        total += objProducto.precio;
+    }
+
+    return total.toFixed(2);
 
 }
 
@@ -179,18 +281,44 @@ function calcularTotal() {
  * Varia el carrito y vuelve a dibujarlo
  */
 function vaciarCarrito() {
-
+    if (confirm('¿Seguro que quieres vaciar el carrito?')){
+        carrito = []; //así vacío el array
+        renderizarCarrito();
+    }
 }
 
 // -----------------------------------------------------------------------------
 // Eventos
 // -----------------------------------------------------------------------------
+DOMbotonVaciar.addEventListener('click',vaciarCarrito);
 
+// -----------------------------------------------------------------------------
+// LocalStorage
+// -----------------------------------------------------------------------------
+function guardarCarritoEnLocalStorage(){
+    window.localStorage.setItem("carritoDAWB",JSON.stringify(carrito));
+    //window.localStorage.setItem("carritoDAWB",carrito); // mal!!! no es un objeto array
+}
 
+function cargarCarritoDeLocalStorage(){
+    if (window.localStorage.getItem("carritoDAWB") != null)
+        carrito = JSON.parse(window.localStorage.getItem("carritoDAWB"));
+}
 
 // -----------------------------------------------------------------------------
 // Inicio
-renderizarProductos(); //para cargar los productos en el main con id="items"
-renderizarCarrito(); //para cargar los productos en el carrito (ul con id="carrito")
+// -----------------------------------------------------------------------------
+// cargarCarritoDeLocalStorage();
+// renderizarProductos(); //para cargar los productos en el main con id="items"
+// renderizarCarrito(); //para cargar los productos en el carrito (ul con id="carrito")
+
+// window.onload = cargarCarritoDeLocalStorage;
+// window.onload = renderizarProductos;
+// window.onload = renderizarCarrito; // machaca a renderizarProductos
+
+window.addEventListener('load',cargarCarritoDeLocalStorage);
+window.addEventListener('load',renderizarProductos);
+window.addEventListener('load',renderizarCarrito);
+
 // -----------------------------------------------------------------------------
 
