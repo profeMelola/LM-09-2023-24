@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,35 +9,61 @@
 </head>
 
 <body>
-    <form name="miForm" action="https://www.google.es" method="GET">
+    <form id="miFormID" name="miForm" action="https://www.google.es" method="GET">
         <p>
-            <label>Contraseña:<input type="password" name="campo1"/></label>
+            <label>Contraseña:<input type="password" name="campo1" /></label>
         </p>
         <p>
-            <label>Repite la contraseña: <input type="password" name="campo2" id="id2"/></label>
+            <label>Repite la contraseña: <input type="password" name="campo2" id="id2" /></label>
             <span id="pwd" style="color:blue">Ver contraseña</span>
         </p>
         <p>
-            <input type="submit" value="Registrarse"/>
+            <input type="submit" value="Registrarse" />
         </p>
     </form>
 
     <script>
 
-        function validarCampos(e) {
+        function validarCampos(evento) {
+            // Formas diferentes de cargar en memoria un formulario html
+            let miForm = document.forms.miForm;
+            console.log("miForm 1:",miForm);
 
-            // Pendiente completar!!!!
+            miForm = document.forms[0];
+            console.log("miForm 2:",miForm);
+
+            miForm = miFormID;
+            console.log("miForm 3:",miForm);
+
+
+            // Accedo a los campos del formulario a través del nombre directamente
+            if (miForm.campo1.value == ""){
+                // SI VALOR CAMPO 1 == "" ==> El primer campo está vacío
+                alert("El primer campo está vacío!!!!");
+                evento.preventDefault();
+            }
+            
+
+            // SI NO, SI VALOR CAMPO 2.LENGHT = 0 ==> El segundo campo está vacío
+
+            // SI NO, SI VALOR CAMPO1 == VALOR CAMPO2 ==> Las contraseñas coinciden y me conecto a Google
+
+            // Las contraseñas no coinciden
+
+
 
         }
 
-       
+
         // Sin modificar el html escribe el selector
-        const miSubmit = document.querySelector('??????');
+        const miSubmit = document.querySelector('p:last-child input[type="submit"]');
 
         // Añadir listener al evento click al input type submit y asociar la funcion validarCampos
+        miSubmit.addEventListener('click', validarCampos);
 
 
         // Añadir los eventos mouseover y mouseout al span ..
+
 
 
     </script>
