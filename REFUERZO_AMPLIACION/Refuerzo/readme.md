@@ -1,30 +1,37 @@
 # Ejercicio 1: crear tabla dinámicamente
 
 ## Página HTML de partida
+![Captura de pantalla de 2024-04-26 17-39-23](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/a387ef62-5bbb-4b0d-b526-a347281bf0d2)
 
-![image](https://github.com/profeMelola/LM_2022-23/assets/91023374/7a2df5fa-6f79-4cfa-9b53-15ade72501f0)
 
 
 ## Resultado
 
-![image](https://github.com/profeMelola/LM_2022-23/assets/91023374/44a0327b-f90e-45c7-be04-ab6c66948d52)
+![Captura de pantalla de 2024-04-26 17-40-03](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/06307580-ec94-4f11-b501-03d0246bba90)
+
 
 # Ejercicio 2: manipular una tabla
 
 ## Página HTML de partida
 
-![image](https://github.com/profeMelola/LM_2022-23/assets/91023374/66485c85-36f0-49ff-a809-08de604ff01c)
+![Captura de pantalla de 2024-04-26 17-40-25](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/b80fa79b-f998-4ac6-97fe-a1cac0f19085)
+
 
 ## Resultado
 
 Al hacer click en el botón de **borrar** que se vayan borrando filas empezando por el final.
 
-![image](https://github.com/profeMelola/LM_2022-23/assets/91023374/212ae84c-7d6f-48ee-9605-a57720176e7a)
+![Captura de pantalla de 2024-04-26 17-40-54](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/c1c46dd3-2e6b-46ad-94a0-d8c2b4e7b89a)
 
-Al hacer click en el botón de **recuperar última fila borrada** que se añada a la tabla la última fila borrada.
 
-![image](https://github.com/profeMelola/LM_2022-23/assets/91023374/33e23f22-c1a5-445c-85df-8e707f2ea21f)
+Al hacer click en el botón de **recuperar última fila borrada** que se añada a la tabla la última fila borrada. En este caso he ido borrando todas menos la fila A:
+
+![Captura de pantalla de 2024-04-26 17-41-24](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/f17dafcd-80d5-4641-a550-8f5a1ddaa048)
+
+
 
 Si no se ha borrado previamente ninguna fila que se muestre un mensaje de aviso:
 
-![image](https://github.com/profeMelola/LM_2022-23/assets/91023374/d56d6bd8-5072-447d-8f7f-7bb70e037b78)
+
+![Captura de pantalla de 2024-04-26 17-42-04](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/93e785c2-459d-4092-b32d-fce9d1fb1c4c)
+
