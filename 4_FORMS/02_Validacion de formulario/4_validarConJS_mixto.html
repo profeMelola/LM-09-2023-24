@@ -20,13 +20,27 @@
         //const fname = document.getElementById("fname");
         //const fname = document.querySelector("#fname");
 
-        fname.addEventListener('invalid',e=>{
-            console.log(e.target.validity);
-            
-            if (e.target.validity.tooShort)
-                    e.target.setCustomValidity("Majete debe tener el campo una longitud min de 5 caracteres!!!!");            
-            
-        })
+        // El evento input se dispara cuando hay cambios en el value
+        fname.addEventListener('input',e=>{
+
+            // 2 formas de saber si las restricciones html5 son correctas
+            console.log("e.target.validity.valid:");
+            console.log(e.target.validity.valid);
+
+            console.log("e.target.checkValidity():");
+            console.log(e.target.checkValidity());
+
+            // Vamos a personalizar el mensaje
+            if (!e.target.checkValidity()){
+                console.log("¿Es demasiado corto?");
+                console.log(e.target.validity.tooShort);
+                
+                if (e.target.validity.tooShort)
+                    e.target.setCustomValidity("Majete debe tener el campo una longitud min de 5 caracteres!!!!");
+                else
+                e.target.setCustomValidity("");
+            }
+        });
 
         document.forms[0].addEventListener('submit',e=>{
             console.log("[SUBMIT]fname.checkValidity()");
