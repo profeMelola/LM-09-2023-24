@@ -21,7 +21,7 @@ special.style.background = "green";
 
 // -------------------------------
 //las funciones getElements... devuelve una HTML colección
-//la función querySelector... devuelve un array
+//la función querySelectorAll... devuelve un array
 // -------------------------------
 
 //Obtenemos varios elementos
@@ -35,6 +35,9 @@ const list2 = document.getElementsByTagName("li");
 console.log(`list 2:${list2}`);
 console.log(list2); //html collection
 
+list2.array.forEach(element => {
+    
+});
 
 for(const item of list2){
     item.style.fontSize="4rem";

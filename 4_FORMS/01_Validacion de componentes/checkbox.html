@@ -3,7 +3,9 @@
    	<title>Ejemplo Checkbox</title> 
 	<script> 
 		function alertaChecked(){ 
-   			alert(document.miFormulario.miCheck.checked); 
+   			//alert(document.miFormulario.miCheck.checked); 
+			//alert(miFormularioID.miCheck.checked); 
+			alert(document.forms[0].miCheck.checked);
 		} 
 		function metodoClick(){ 
    			document.miFormulario.miCheck.click(); 
@@ -34,7 +36,7 @@ blur(): Retira el foco de la aplicación del checkbox.
 focus(): Coloca el foco de la aplicación en el checkbox.
 -->
 
-	<form name="miFormulario" action="#" method="post" enctype="text/plain"> 
+	<form id="miFormularioID" name="miFormulario" action="#" method="post" enctype="text/plain"> 
 		<p>
 			<input type="checkbox" name="miCheck"> 
 		</p>
