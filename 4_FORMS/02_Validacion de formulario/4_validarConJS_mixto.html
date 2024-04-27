@@ -37,8 +37,11 @@
                 
                 if (e.target.validity.tooShort)
                     e.target.setCustomValidity("Majete debe tener el campo una longitud min de 5 caracteres!!!!");
-                else
-                e.target.setCustomValidity("");
+                else{
+                    // Siempre hay que limpiar el mensaje custom validity en el caso contrario
+                    e.target.setCustomValidity("");
+                }
+                    
             }
         });
 

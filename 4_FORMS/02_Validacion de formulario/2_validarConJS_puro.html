@@ -19,14 +19,23 @@
     <script>
 
         myForm.addEventListener('submit', (evento) =>{
-            // const x = document.getElementById("fname").value;
-            // const x = document.forms[0].fname.value;
-            const x = myForm.fname.value;
-            console.log("x",x);
-            if (x.trim() === "") {
+            
+            // const nombre = document.getElementById("fname").value;
+            // const nombre = document.forms[0].fname.value;
+            const nombre = myForm.fname.value;
+
+            console.log("nombre",nombre);
+            if (nombre.trim() === "") {
                 alert("Majete!!! rellena el campo");
                 evento.preventDefault();
             }
+            // PENDIENTE CONTROLAR QUE LA LONGITUD SEA MAYOR QUE 5!!!!
+            else if (nombre.length <= 5){
+                alert("Majete!!! escribe más (mínimo 6)");
+                evento.preventDefault();
+            }
+
+            // si llega aquí.... se ejecuta el submit!!!!!
         });
 
 

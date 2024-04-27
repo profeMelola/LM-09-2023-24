@@ -1,0 +1,73 @@
+<html> 
+<head> 
+   	<title>Ejemplo Radio Button</title> 
+</head>
+<body> 
+<!--
+Propiedades del objeto radio
+----------------------------
+
+checked: Indica si está chekeado o no un botón de radio.
+
+defaultChecked: Su estado por defecto.
+
+value: El valor del campo de radio, asignado por la propiedad value del radio.
+
+Length (como propiedad del array de radios):
+El número de botones de radio que forman parte en el grupo. Accesible en el vector de radios.
+
+
+Métodos del checkbox
+--------------------
+Veamos la lista de los métodos de un checkbox.
+
+click(): Es como si hiciésemos un click sobre el checkbox, es decir, cambia el estado del checkbox.
+
+blur(): Retira el foco de la aplicación del checkbox.
+
+focus(): Coloca el foco de la aplicación en el checkbox.
+-->
+<form name="fcolores"> 
+<input type="radio" name="colorin" value="ffffff"   checked> Blanco 
+<br> 
+<input type="radio" name="colorin" value="ff0000"  > Rojo 
+<br> 
+<input type="radio" name="colorin" value="00ff00"  > Verde 
+<br> 
+<input type="radio" name="colorin" value="blue"  > Azul 
+<br> 
+<input type="radio" name="colorin" value="ffff00"  > Amarillo 
+<br> 
+<input type="radio" name="colorin" value="00ff00"  > Turquesa 
+<br> 
+<input type="radio" name="colorin" value="ff00ff"  > Morado 
+<br> 
+<input type="radio" name="colorin" value="000000"  > Negro 
+<br> 
+<br> 
+<!--<input type="button" name="btn" value="Cambia Color"  > -->
+</form> 
+
+
+<script> 
+	function cambiaColor(event){ 
+		document.bgColor = event.target.value; 
+	} 
+
+	const colorines = document.querySelectorAll('input[type="radio"]');
+
+	console.log(colorines);
+
+	colorines.forEach( (c) => c.addEventListener('click', cambiaColor));
+	
+	// for (const c of colorines) {
+	// 	c.addEventListener('click',cambiaColor);
+	// }
+
+
+	</script> 
+	
+
+
+</body> 
+</html>
