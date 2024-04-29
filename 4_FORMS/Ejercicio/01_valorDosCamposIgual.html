@@ -35,6 +35,9 @@
             miForm = miFormID;
             console.log("miForm 3:",miForm);
 
+            miForm = document.querySelector('form');
+            console.log("miForm 4:",miForm);
+
 
             // Accedo a los campos del formulario a través del nombre directamente
             if (miForm.campo1.value == ""){
@@ -42,16 +45,19 @@
                 alert("El primer campo está vacío!!!!");
                 evento.preventDefault();
             }
-            
-
             // SI NO, SI VALOR CAMPO 2.LENGHT = 0 ==> El segundo campo está vacío
-
-            // SI NO, SI VALOR CAMPO1 == VALOR CAMPO2 ==> Las contraseñas coinciden y me conecto a Google
-
-            // Las contraseñas no coinciden
-
-
-
+            else if (miForm.campo2.value.length == 0){
+                alert("El segundo campo está vacío!!!");
+                evento.preventDefault();
+            }
+            else if (miForm.campo1.value == miForm.campo2.value){
+                // SI NO, SI VALOR CAMPO1 == VALOR CAMPO2 ==> Las contraseñas coinciden y me conecto a Google
+                alert("Las contraseñas coinciden!!!");
+            }else{
+                // Las contraseñas no coinciden
+                alert("Las contraseñas no coinciden!!!!");
+                evento.preventDefault();
+            }
         }
 
 
@@ -63,6 +69,22 @@
 
 
         // Añadir los eventos mouseover y mouseout al span ..
+        //const verPwd = document.querySelector('#pwd');
+        const verPwd = document.getElementById('pwd');
+
+
+        verPwd.addEventListener('mouseover', () => miFormID.campo2.type = "text");
+
+        // verPwd.addEventListener('mouseout', function (){
+        //     miFormID.campo2.type = "password";
+        // });
+
+        verPwd.addEventListener('mouseout',ocultar);
+
+        function ocultar(){
+            miFormID.campo2.type = "password";
+        }
+
 
 
 
