@@ -1,4 +1,4 @@
-# Validación del frmulario
+# Validación de formulario
 
 No debes modificar la página form.html. Ya tiene configuradas las validaciones HTML5.
 
