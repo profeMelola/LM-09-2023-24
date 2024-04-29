@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Pokedex</title>
+</head>
+<body>
+    <h1>AJAX Pokedex</h1>
+    <p></p>
+</body>
+<script>
+/* ******************************************************* */
+let pokedex = [];
+
+fetch('https://pokeapi.co/api/v2/pokemon')
+    .then((response) => response.json())
+        .then((json) => {
+            for (const pokemon of json.results){
+                console.log('https://pokeapi.co/api/v2/pokemon/'+pokemon.name);
+
+                fetch('https://pokeapi.co/api/v2/pokemon/'+pokemon.name)
+                .then(response => response.json())
+                .then(json => {
+                    //console.log(json.sprites.back_default);
+                    //console.log(json.sprites.front_default);
+                    pokedex.push(json);
+                });
+            }
+            console.log("**** pokedex mal ***");
+            console.log(pokedex);
+});
+
+setTimeout(() => {
+    console.log("Delayed for 2 second.");
+    console.log("********* POKEDEX *******");
+    console.log(pokedex);
+    const p = document.querySelector("p");
+    p.innerHTML = JSON.stringify(pokedex);
+  }, "2000");
+
+/* ********************************************** */
+
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+</head>
+
+<body>
+    <h1>Formulario de envío de informe</h1>
+    <p>Por favor, rellena los siguientes campos obligatorios</p>
+    <form name="formEmail" action="ok.html" target="_blank">
+        <fieldset>
+            <label>Email: <input type="email" name="mail" id="mail" pattern=".+@educa\.madrid\.org"
+                    placeholder="email de EducaMadrid" required /></label>
+        </fieldset>
+        <fieldset>
+            <label>Observaciones:<textarea cols="40" rows="5" id="observaciones" placeholder="disabled" required
+                    disabled></textarea></label>
+        </fieldset>
+        <input type="submit" value="Generar informe" id="submit" />
+    </form>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
