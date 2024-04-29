@@ -1,6 +1,6 @@
 # Validación de formulario
 
-No debes modificar la página form.html. Ya tiene configuradas las validaciones HTML5.
+No debes modificar la página **form.html**. Ya tiene configuradas las validaciones HTML5.
 
 Añade directamente en dicha página el código JS pertinente. No hace falta un JS externo.
 
