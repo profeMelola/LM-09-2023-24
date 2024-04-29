@@ -8,7 +8,9 @@ Añade directamente en dicha página el código JS pertinente. No hace falta un 
 
 El campo observaciones estará deshabilitado hasta que se escriba correctamente la dirección de email en base a su pattern.
 
-La validación del email se hace por pattern (ya está configurado). La cuenta de email debe contener el dominio @educa.madrid.org
+La validación del email se hace por pattern (ya está configurado). PISTA: validity.patternMismatch.
+
+La cuenta de email debe contener el dominio @educa.madrid.org 
 
 - En caso negativo: deberá aparecer el mensaje de validación html5 personalizado con el siguiente texto "El email no contiene el dominio educa.madrid.org". Observa la captura:
 
