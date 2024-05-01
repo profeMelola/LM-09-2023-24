@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+</head>
+
+<body>
+    <h1>Formulario de envío de informe</h1>
+    <p>Por favor, rellena los siguientes campos obligatorios</p>
+    <form name="formEmail" action="ok.html" target="_blank">
+        <fieldset>
+            <label>Email: <input type="email" name="mail" id="mail" pattern=".+@educa\.madrid\.org"
+                    placeholder="email de EducaMadrid" required /></label>
+        </fieldset>
+        <fieldset>
+            <label>Observaciones:<textarea cols="40" rows="5" id="observaciones" placeholder="deshabilitado" required
+                    disabled></textarea></label>
+        </fieldset>
+        <input type="submit" value="Generar informe" id="submit" />
+    </form>
+
+    <script>
+        // Cargar en memoria los dos elementos html que necesito controlar vía JS
+
+        const email = document.forms.formEmail.mail;
+        console.log("email",email);
+
+        const observaciones = document.getElementById("observaciones");
+        console.log("observaciones",observaciones);
+
+        // GESTIONAR EL EVENTO INPUT DE EMAIL
+        
+        email.addEventListener('input', (e) =>{
+
+            console.log("validity",email.checkValidity());
+
+            if(!email.checkValidity()){
+                // no es válido
+
+                // No es válido porque no coincide el pattern 
+                if(email.validity.patternMismatch){
+                    console.log("No es válido según el pattern");
+
+                    //Pongo el mensaje personalizado
+                    email.setCustomValidity('El email debe contener el dominio educa.madrid.org');
+
+                    observaciones.disabled = true;
+                    observaciones.placeholder = 'deshabilitado';
+                    observaciones.value = '';
+                }
+                else{
+                    // Obligatoriamente tengo que eliminar el mensaje personalizado en cuanto cumpla el pattern
+                    console.log('Email correcto');
+
+                    // Si borro el contenido del email, no será válido (porque es obligatorio)
+                    // pero cumple el pattern (porque está vacío)
+                    if (email.value.trim() == ''){
+                        observaciones.disabled = true;
+                        observaciones.placeholder = 'deshabilitado';
+                        observaciones.value = '';
+                    }
+                    else{
+                        email.setCustomValidity('');
+                        observaciones.disabled = false;
+                        observaciones.placeholder = 'Escribe los comentarios pertinentes';
+                    }
+
+                }
+
+            }else{
+                console.log("ole majete!!! Se hace el submit!");
+                observaciones.disabled = false;
+                observaciones.placeholder = 'Escribe los comentarios pertinentes';
+
+            }
+
+
+        } );
+
+
+        // En el submit del formulario creo el objeto y guardo en el localStorage
+        document.forms.formEmail.addEventListener('submit',() =>{
+            const informe = {
+                email: email.value,
+                observaciones: observaciones.value
+            };
+
+            window.localStorage.setItem("informe",JSON.stringify(informe));
+        });
+  
+
+
+
+    </script>
+</body>
+
+</html>
