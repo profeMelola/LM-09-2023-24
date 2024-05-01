@@ -111,6 +111,11 @@ Tu trabajo pesa un 80% en la calificación.
 # Fecha de entrega: no se admiten retrasos
 Lunes 13 de mayo a las 10:00
 
+**Requisito:**
+Todos los productos o servicios de la tienda online deben ser legales y éticos. 
+Se requiere que los estudiantes elijan productos o servicios que no solo cumplan con las leyes aplicables, sino que también respeten las sensibilidades culturales y sociales.
+En el caso de que el profesor considere que no se cumple esa premisa, el trabajo no será calificado.
+
 # Fecha prevista para corregir en clase
 Lunes 13 de mayo
 
