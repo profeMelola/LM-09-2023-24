@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controles">
+            <p>
+                <label for="filas">Filas</label>
+                <input type="number">
+                <label for="filas">Columnas</label>
+                <input type="number">
+            </p>
+            <p>
+                <button id="build">Construir Tabla</button>
+            </p>
+        </div>
+
+        <!-- creo la tabla-->
+
+    </div>
+
+    <script>
+        // Guardar en una variable el elemento HTML button
+        const boton = document.getElementById('build');
+
+        // Le añado el listener del evento click
+        boton.addEventListener('click', (e) => {
+
+            // RECOGER LOS VALORES PARA SABER EL NUM FILAS Y COLS
+            console.log("********** FORMA 1 ********");
+            // first-of-type indica el primer elemento del tipo input
+            let filas = document.querySelector('input:first-of-type');
+            console.log(filas);
+
+            let columnas = document.querySelector('input:last-of-type');
+            console.log(columnas);
+
+            console.log("********** FORMA 2 ********");
+            const inputs = document.querySelectorAll('input');
+            filas = inputs[0];
+            console.log(filas);
+            //columnas = inputs[1];
+            columnas = document.querySelectorAll('input')[1];
+            console.log(columnas);
+
+            let numFilas = filas.value;
+            let numCols = columnas.value;
+
+            console.log("numFilas",numFilas);
+            console.log("numCols",numCols);
+
+            // CREAR EL ELEMENTO TABLA
+            // En el div voy a crear la tabla
+            const div = document.querySelector(".container");
+
+            // Comprobar si el elemento table ya existe
+            // Si no existe lo creo, si existe borro la tabla
+            // Puedo comprobar o bien por null o como booleano
+
+            //if (document.querySelector('table') != null){
+            if (document.querySelector('table')){
+                // Puedo borrar la tabla o bien con el método remove o con el truqui del outerHTML
+                //document.querySelector('table').remove();
+                document.querySelector('table').outerHTML = '';
+            }
+
+            const tabla = document.createElement('table');
+
+            // Podemos crear las filas y celdas de la tabla de dos formas:
+            // 1. con createElement o luego append
+            // 2. con los método insertRow e insertCell (no necesito create ni append). Estos métodos añaden automáticamente el tbody a la tabla...
+            for (let i = 0; i < numFilas; i++) {
+                let row = document.createElement('tr');
+                //let row = tabla.insertRow(i);
+                for (let j = 0; j < numCols; j++) {
+                    let col = document.createElement('td');
+                    //let col = row.insertCell(j);
+                    col.textContent = i+","+j;
+                    row.append(col);
+                }
+                tabla.append(row);
+            }
+
+            div.append(tabla);
+
+        });
+    </script>
+</body>
+</html>
