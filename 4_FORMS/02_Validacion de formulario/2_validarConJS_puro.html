@@ -29,9 +29,8 @@
                 alert("Majete!!! rellena el campo");
                 evento.preventDefault();
             }
-            // PENDIENTE CONTROLAR QUE LA LONGITUD SEA MAYOR QUE 5!!!!
-            else if (nombre.length <= 5){
-                alert("Majete!!! escribe más (mínimo 6)");
+            else if (nombre.length < 5){
+                alert("Majete!!! escribe más (mínimo 5)");
                 evento.preventDefault();
             }
 

@@ -91,7 +91,7 @@
     <h1>Formulario de registro</h1>
       <!-- con la propiedad novalidate se deshabilitan las validaciones html5 -->
       <!--<form action="" name="formRegistro" novalidate>-->
-      <form action="" name="formRegistro">
+      <form action="www.google.es" name="formRegistro">
       <fieldset>
         <label>Dirección completa:
           <textarea
@@ -114,7 +114,7 @@
       document.formRegistro.direccion.addEventListener('input', e => {
         console.log(e.target.validity.tooShort);
         if (e.target.validity.tooShort) {
-          e.target.setCustomValidity("Dirección demasiado corta. No has escrito la dirección de envío completa");
+          e.target.setCustomValidity("MAJETE!!!Dirección demasiado corta. No has escrito la dirección de envío completa");
         }
         else
           e.target.setCustomValidity("");
