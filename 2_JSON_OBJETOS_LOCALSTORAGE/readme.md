@@ -1,6 +1,8 @@
-![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/35005584-fcbe-4d6e-a6a1-de7e49ebbe10)
+<img src="https://github.com/profeMelola/LM-09-2023-24/assets/91023374/35005584-fcbe-4d6e-a6a1-de7e49ebbe10" height="400px"/>
 
+fuente: https://patriciaemiguel.com/conceptos/2021/01/11/json.html
 
+## Teoría
 https://lenguajejs.com/javascript/objetos/json/
 
 
