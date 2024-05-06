@@ -52,7 +52,7 @@ Existe una gran cantidad de eventos en el DOM que podemos capturar. En este enla
 
 **reset:** Se dispara cuando se restablece un formulario.
 
-**change:** Se dispara cuando el valor de un elemento de formulario (como <input>, <select> o <textarea>) cambia y se desenfoca.
+**change:** Se dispara cuando el valor de un elemento de formulario (como &lt;input&gt;, &lt;select&lt; o &lt;textarea&gt;) cambia y se desenfoca.
 
 **input:** Se dispara cuando el valor de un elemento de formulario cambia, independientemente de si se desenfoca o no.
 
