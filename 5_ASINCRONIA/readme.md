@@ -1,12 +1,16 @@
-# AJAX (Asynchronous JavaScript And XML)
+# Asincronía
 
-https://lenguajejs.com/javascript/peticiones-http/ajax/
+https://lenguajejs.com/javascript/asincronia/que-es/
 
 # Promesas y async y await
 
 https://es.javascript.info/async
 
 ![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/1381ea90-04d2-411b-9e23-cd5fe10e2b2f)
+
+# Peticiones Http
+
+https://lenguajejs.com/javascript/peticiones-http/ajax/
 
 
 ## CORS
