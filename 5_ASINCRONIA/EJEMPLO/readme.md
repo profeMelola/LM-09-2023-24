@@ -1,5 +1,7 @@
 # Descripción del ejemplo
 
+![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/8dbd509c-3d2b-4fda-ac22-f7e9b02665c6)
+
 1. Se define una matriz vacía llamada pokedex.
 2. Se utiliza la función fetch() para realizar una solicitud GET a la URL 'https://pokeapi.co/api/v2/pokemon'. Esta solicitud busca obtener una lista de todos los Pokémon disponibles.
 3. Se encadenan promesas usando .then() para manejar la respuesta de la solicitud y convertirla a formato JSON. Dentro de esta promesa, se itera sobre la lista de resultados de Pokémon obtenida.
