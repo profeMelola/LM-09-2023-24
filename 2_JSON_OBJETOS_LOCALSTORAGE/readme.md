@@ -1,7 +1,5 @@
+![image](https://github.com/profeMelola/LM-09-2023-24/assets/91023374/35005584-fcbe-4d6e-a6a1-de7e49ebbe10)
 
-![image](https://user-images.githubusercontent.com/91023374/228243369-95ed5aea-634c-49fa-8a27-7bf9d783a5ac.png)
-
-![image](https://user-images.githubusercontent.com/91023374/228243591-4902beff-3c56-4b3f-b6dd-e3ccb3981e07.png)
 
 https://lenguajejs.com/javascript/objetos/json/
 
