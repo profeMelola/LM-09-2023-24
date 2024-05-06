@@ -34,7 +34,6 @@ La columna donde va la foto del alumno:
 La columna donde va el radioButton:
 
 - Al hacer click sobre un radioButton deberá completarse el aside de la página html (ver especificaciones del ASIDE más abajo). 
-- Al hacer click sobre el botón “enviar” se abrirá en una nueva ventana la página form.html.
 
 Añade un alumno nuevo (con datos inventados) en la baseDeDatos. Asígnale el avatar1.jpg.
 
