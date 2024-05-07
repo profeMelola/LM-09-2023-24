@@ -1,6 +1,6 @@
 // --------------------------------------------------------
-// Clase alumno
-/*class alumno {
+/*// Clase alumno
+class alumno {
     constructor(id, nombre, imagen, notas) {
         this.id = id,
         this.nombre = nombre,
@@ -11,15 +11,17 @@
 
 // Creo 4 alumnos de prueba
 // El array de notas va en orden según la tabla html
-const alumno1 = new alumno(1, "Tyson Fury", "imgs/avatar1.jpg", [10, 8, 5, 9, 7, 9]);
+//const alumno1 = new alumno(1, "Tyson Fury", "imgs/avatar1.jpg", [10, 8, 5, 9, 7, 9]);
 const alumno2 = new alumno(2, "Katie Taylor", "imgs/avatar2.jpg", [1, 5, 6, 9, 10, 3]);
 const alumno3 = new alumno(3, "Carolina Marín", "imgs/avatar3.jpg", [5, 7, 5, 3, 7, 10]);
 const alumno4 = new alumno(4, "Sandra Sánchez", "imgs/avatar4.jpg", [7, 8, 5, 2, 7, 9]);
 
 // Base de Datos
-const baseDeDatos = [alumno1, alumno2, alumno3, alumno4];*/
+const baseDeDatos2 = [new alumno(1, "Tyson Fury", "imgs/avatar1.jpg", [10, 8, 5, 9, 7, 9]), alumno2, alumno3, alumno4];
+*/
 
 // ES EQUIVALENTE USAR CLASS QUE DIRECTAMENTE CREAR LOS OBJETOS EN EL ARRAY
+
 const baseDeDatos =[
     {
         id: 1,
