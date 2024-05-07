@@ -47,11 +47,13 @@ function cargarProvincias() {
     // Obtener las provincias para la comunidad seleccionada
     const provinciasComunidad = provincias[comunidadSeleccionada];
 
+
     // Crear opciones para cada provincia
     provinciasComunidad.forEach(function(provincia) {
-        var opcion = document.createElement("option");
-        opcion.text = provincia;
-        opcion.value = provincia;
+        //let opcion = document.createElement("option");
+        let opcion = new Option(provincia, provincia);
+        //opcion.text = provincia;
+        //opcion.value = provincia;
         provinciaSelect.add(opcion);
     });
 }
