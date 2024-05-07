@@ -13,8 +13,14 @@ https://es.javascript.info/async
 https://lenguajejs.com/javascript/peticiones-http/ajax/
 
 
+## Más información
+
+<a href="https://www.freecodecamp.org/espanol/news/programacion-asincrona-en-javascript-guia-para-principiantes/#:~:text=En%20resumen%2C%20la%20programaci%C3%B3n%20as%C3%ADncrona,%2C%20async%2Fawait%20y%20promesas.">Programación asíncrona en JavaScript: Guía para Principiantes</a>
+
 ## CORS
 
 Por defecto, en Javascript, las peticiones al mismo dominio de la web donde nos encontramos se pueden realizar sin ninguna restricción. Sin embargo, si intentamos realizarlas a otro dominio diferente, probablemente nos aparezca un error de CORS (Cross-Origin Resource Sharing) 
  
 https://lenguajejs.com/javascript/peticiones-http/cors/
+
+
