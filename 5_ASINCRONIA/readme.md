@@ -17,7 +17,9 @@ https://lenguajejs.com/javascript/peticiones-http/ajax/
 
 <a href="https://www.freecodecamp.org/espanol/news/programacion-asincrona-en-javascript-guia-para-principiantes/#:~:text=En%20resumen%2C%20la%20programaci%C3%B3n%20as%C3%ADncrona,%2C%20async%2Fawait%20y%20promesas.">Programación asíncrona en JavaScript: Guía para Principiantes</a>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6O8ax3JYboc?si=1NbefJb9NuBaJNWh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Alt text](https://img.youtube.com/vi/6O8ax3JYboc/0.jpg)](https://www.youtube.com/watch?v=6O8ax3JYboc)
+
+
 
 ## CORS
 
