@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DAW - Examen tercer trimestre</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="item">
+            <div>
+                <h1>Examen tercera evaluación - Saint Seiya</h1>
+                <h2>NOMBRE DEL ALUMNO (A RELLENAR A MANO)</h2>
+            </div>
+            <div>
+                <img src="imgs/saintSeiya.png" />
+            </div>
+        </header>
+        <nav class="item">
+            <a href="javascript:location.reload()">Reiniciar página</a>
+            <a href="javascript:mostrarInforme('oro')">Caballeros de oro</a>
+            <a href="javascript:mostrarInforme('plata')">Caballeros de plata</a>
+            <a href="javascript:mostrarInforme('bronce')">Caballeros de bronce</a>
+            <a href="javascript:mostrarInforme('marinos')">Marinos de Poseidón</a>
+        </nav>
+        <main class="item">
+
+            <!-- crear contenido dinámicamente -->
+            
+            
+        </main>
+
+        <aside class="item">
+            <h2>INFORME</h2>
+            <h3><!-- aquí se pone el tipo de los caballeros --></h3>
+            <p id="descripcion"><!-- aquí se pone la descripción de los caballeros --></p>
+            <section>
+                <!-- Aquí se crea dinámicamente la tabla de estadísticas -->
+            </section>
+        </aside>
+
+        
+        <footer class="item">
+            <p>Contacta con los caballeros</p>
+            <form name="formFichero" action="https://saintseiya.fandom.com/es/wiki/Saint_Seiya_Wiki" target="_blank">
+                <textarea cols="80" rows="5" name="comentarios" placeholder="escribe tu comentario" required ></textarea>
+                <input type="checkbox" name="confirmar" disabled required/>Aceptas las condiciones
+                <input type="submit" value="Envia tu comentario" id="submit" />
+            </form>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
