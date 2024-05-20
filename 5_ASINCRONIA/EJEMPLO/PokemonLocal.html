@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Pokedex</title>
+</head>
+<body>
+    <h1>Pokedex</h1>
+    <main></main>
+</body>
+<script>
+/* ******************************************************* */
+let pokedex = [];
+
+async function fetchPokemonData() {
+    try {
+        const response = await fetch('pokemon.json');
+        const json = await response.json();
+
+        const main = document.querySelector("main");
+
+        main.innerHTML = '';
+
+        for (const pokemon of json.results) {
+            const p = document.createElement("p");
+            p.textContent = pokemon.name; 
+            main.append(p);
+        }
+
+
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+fetchPokemonData();
+
+
+/* ********************************************** */
+
+</script>
+</html>
