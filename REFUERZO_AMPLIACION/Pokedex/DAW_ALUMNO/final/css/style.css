@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /*width: 1200px;*/
+  margin: 0 auto;
+}
+
+.item {
+  padding: 8px;
+  /*background-color: white;*/
+  border: 4px solid ;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+h2{
+  text-align: center;
+  color: black;
+}
+
+/* Grid Layout */
+.container {
+  margin: 15px auto;
+  display: grid;
+  width: 80%;
+
+  grid-template-rows: auto 1fr;
+  /*grid-template-columns: repeat(1fr);*/
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  grid-template-areas: 
+  "head head head head"
+  "main main main main";
+
+  gap: 5px;
+
+}
+
+header {
+  grid-area: head;
+
+  display: flex;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  background-color: lightgoldenrodyellow;
+
+}
+
+header div{
+  border-radius: 10px;
+  border: 3px solid grey;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  text-align: center;
+
+}
+
+header div:nth-child(3){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header div section{
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  grid-area: main;
+}
+
+.boton{
+  margin:10px;
+  font-weight: bold;
+  padding:10px;
+
+}
+
+.add, .delete{
+  background-color: yellow;
+}
+.filtrar{
+  background-color: lightcoral;
+}
+.recargar{
+  background-color: aquamarine;
+}
+
+/* Estilos de la tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th {
+  background-color: rgba(77, 77, 77, 0.767);
+  color: white;
+}
+
+ul li{
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 10px;
+
+}
+
+.tablaTipos{
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+  
+}
+
+.tablaTipos tr td{
+  border: 5px solid grey;
+  padding: 10px;
+}
+

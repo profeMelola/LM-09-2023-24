@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulacro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="item">
+            <div>
+                <h2>Menú de opciones</h2>
+                <section>
+                    <button id="add" class="boton add">AÑADIR A PIKACHU</button>
+                    <button id="delete" class="boton delete">BORRAR A PIKACHU</button>
+                    <button id="filtrar" class="boton filtrar">MOSTRAR SOLO TIPO POISON</button>
+                    <button class="boton recargar" onclick="location.reload()">REINICIAR PÁGINA</button>
+                </section>
+            </div>
+            <div>
+                <h3>INFORMACIÓN DEL POKEMON SELECCIONADO</h3>
+                <p id="infoPokemon"></p>
+            </div>
+            <div>
+                <h1>POKEDEX</h1>
+            </div>
+        </header>
+        <main class="item">
+            <div class="data">
+                <table> 
+                    <thead>
+                        <tr>
+                            <th>IMAGEN</th>
+                            <th>NOMBRE</th>
+                            <th>TIPO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se cargarán mediante JS las filas de la tabla con su contenido-->
+                        <!-- Una fila por cada pokemon y las columnas correspondientes -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+ 
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
