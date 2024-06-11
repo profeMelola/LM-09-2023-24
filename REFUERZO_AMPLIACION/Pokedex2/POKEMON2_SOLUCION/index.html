@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DAW - Examen tercer trimestre</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="item">
+            <div>
+                <h1>Examen tercera evaluación POKEDEX</h1>
+                <h2>NOMBRE DEL ALUMNO (A RELLENAR A MANO)</h2>
+            </div>
+            <div>
+                <button id="addPokemon"><b>Añadir</b><img src='imgs/ivysaur.png'/></button>
+                <button onclick="location.reload()" style="margin:10px"><b>REINICIAR PÁGINA</b></button>
+            </div>
+        </header>
+        <main class="item">
+            <div class="centrado">
+                <!-- Aquí se cargarán mediante JS los diferentes div por cda pokemon-->
+            </div>
+        </main>
+        <aside class="item">
+            <h2 id="nombrePokemon">Información del pokemon</h2>
+            <section id="secPokemon">
+                <p id="infoPokemon"></p>
+                <p>
+                    <strong>MEDIA DE ESTADÍSTICAS:</strong>
+                    <span class="media">????????????????????</span>
+                </p>
+            </section>
+        </aside>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
